@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Bluetooth headset - SkyMart</title>
+    <link rel="stylesheet" href="holder2.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a href="main.html">SkyMart</a></h2>
+            </div>
+            <div class="breadcrumb">
+                <a href="main.html">Home</a> > 
+                <a href="index.html#products">Products</a> > 
+                <span>Wireless Bluetooth headset</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Container -->
+    <div class="product-detail-container">
+        
+        <!-- Product Images Section -->
+        <div class="product-images">
+            <div class="main-image">
+                <img src="blutut.png" alt="Wireless Music headset" id="mainImage">
+            </div>
+            <div class="thumbnail-images">
+                <img src="blutut.png" alt="Earbuds with Case" class="thumbnail active" onclick="changeImage(this)">
+                <img src="wirelessear2.png" alt="Single Earbud" class="thumbnail" onclick="changeImage(this)">
+                <img src="wirelessear3.png" alt="Charging Case" class="thumbnail" onclick="changeImage(this)">
+                <img src="wirelessear4.png" alt="In Use" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Info Section -->
+        <div class="product-info">
+            <div class="product-header">
+                <h1 class="product-name">Wireless Bluetooth headset</h1>
+                <div class="product-rating">
+                    <div class="stars">★★★★☆</div>
+                    <span class="rating-count">4.3 (127 reviews)</span>
+                </div>
+            </div>
+
+            <div class="price-section">
+                <span class="current-price">₹1,499</span>
+                <span class="old-price">₹1,999</span>
+                <span class="discount-percent">25% OFF</span>
+            </div>
+
+            <div class="product-features">
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>✓ Active Noise Cancellation (ANC)</li>
+                    <li>✓ 24-Hour Battery Life with Case</li>
+                    <li>✓ Bluetooth 5.3 Technology</li>
+                    <li>✓ IPX5 Water Resistance</li>
+                    <li>✓ Touch Controls & Voice Assistant</li>
+                </ul>
+            </div>
+
+            <div class="quantity-section">
+                <label>Quantity:</label>
+                <div class="quantity-controls">
+                    <button onclick="decreaseQty()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button onclick="increaseQty()">+</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="buy-now-btn">Buy Now</button>
+                <button class="wishlist-btn">♡ Wishlist</button>
+            </div>
+
+            <div class="delivery-info">
+                <div class="delivery-item">
+                    <strong>🚚 Free Delivery:</strong> Order above ₹500
+                </div>
+                <div class="delivery-item">
+                    <strong>📦 Expected Delivery:</strong> 2-3 working days
+                </div>
+                <div class="delivery-item">
+                    <strong>↩️ Return Policy:</strong> 7 days easy return
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Tabs -->
+    <div class="description-container"> 
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'description')">Description</button>
+            <button class="tab-button" onclick="openTab(event, 'specifications')">Specifications</button>
+            <button class="tab-button" onclick="openTab(event, 'reviews')">Reviews</button>
+        </div>
+
+        <!-- Description Tab -->
+        <div id="description" class="tab-content active">
+            <h3>Product Description</h3>
+            <p>
+                The <strong>Wireless Bluetooth Earbuds Pro</strong> deliver exceptional audio quality with cutting-edge technology. 
+                Featuring advanced Active Noise Cancellation (ANC), these earbuds provide an immersive listening experience 
+                whether you're commuting, working out, or simply enjoying your favorite music.
+            </p>
+            
+            <h4>Why Choose Our Earbuds?</h4>
+            <p>
+                Engineered with premium 13mm dynamic drivers and Bluetooth 5.3 technology, these earbuds offer crystal-clear 
+                sound with deep bass and crisp highs. The ergonomic design ensures all-day comfort, while the IPX5 water 
+                resistance makes them perfect for workouts and outdoor activities.
+            </p>
+
+            <h4>Perfect for:</h4>
+            <ul>
+                <li>🎵 Music Streaming & Audio Entertainment</li>
+                <li>📞 Hands-free Calls & Video Conferences</li>
+                <li>🏃‍♂️ Workout & Sports Activities</li>
+                <li>✈️ Travel & Commuting</li>
+                <li>🎮 Mobile Gaming with Low Latency</li>
+                <li>🧘‍♀️ Meditation & Relaxation</li>
+            </ul>
+
+            <h4>Design & Technology:</h4>
+            <p>
+                The sleek design features touch controls for easy music management and call handling. With up to 6 hours 
+                of playtime on a single charge and an additional 18 hours with the charging case, you'll never run out 
+                of music. The quick charge feature provides 1 hour of playback with just 10 minutes of charging.
+            </p>
+        </div>
+
+        <!-- Specifications Tab -->
+        <div id="specifications" class="tab-content">
+            <h3>Technical Specifications</h3>
+            <table class="specs-table">
+                <tr>
+                    <td><strong>Driver Size</strong></td>
+                    <td>13mm Dynamic Drivers</td>
+                </tr>
+                <tr>
+                    <td><strong>Bluetooth Version</strong></td>
+                    <td>Bluetooth 5.3</td>
+                </tr>
+                <tr>
+                    <td><strong>Battery Life (Earbuds)</strong></td>
+                    <td>6 Hours (ANC On) / 8 Hours (ANC Off)</td>
+                </tr>
+                <tr>
+                    <td><strong>Battery Life (With Case)</strong></td>
+                    <td>24 Hours Total Playtime</td>
+                </tr>
+                <tr>
+                    <td><strong>Charging Time</strong></td>
+                    <td>1.5 Hours (Earbuds) / 2 Hours (Case)</td>
+                </tr>
+                <tr>
+                    <td><strong>Water Resistance</strong></td>
+                    <td>IPX5 Rating</td>
+                </tr>
+                <tr>
+                    <td><strong>Frequency Response</strong></td>
+                    <td>20Hz - 20kHz</td>
+                </tr>
+                <tr>
+                    <td><strong>Noise Cancellation</strong></td>
+                    <td>Active Noise Cancellation (ANC)</td>
+                </tr>
+                <tr>
+                    <td><strong>Charging Port</strong></td>
+                    <td>USB-C</td>
+                </tr>
+                <tr>
+                    <td><strong>Weight</strong></td>
+                    <td>5g per earbud / 45g case</td>
+                </tr>
+                <tr>
+                    <td><strong>Warranty</strong></td>
+                    <td>1 Year Manufacturer Warranty</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Reviews Tab -->
+        <div id="reviews" class="tab-content">
+            <h3>Customer Reviews (127)</h3>
+            
+            <div class="review-summary">
+                <div class="overall-rating">
+                    <span class="big-rating">4.3</span>
+                    <div class="stars-large">★★★★☆</div>
+                    <p>Based on 127 reviews</p>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span>5★</span>
+                        <div class="bar"><div class="fill" style="width: 60%"></div></div>
+                        <span>76</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4★</span>
+                        <div class="bar"><div class="fill" style="width: 25%"></div></div>
+                        <span>32</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3★</span>
+                        <div class="bar"><div class="fill" style="width: 10%"></div></div>
+                        <span>13</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2★</span>
+                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                        <span>4</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1★</span>
+                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="individual-reviews">
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Arjun Singh</strong>
+                        <div class="stars">★★★★★</div>
+                        <span class="review-date">3 days ago</span>
+                    </div>
+                    <p>"Amazing sound quality! The noise cancellation works great during flights. Battery life is excellent."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Sneha Gupta</strong>
+                        <div class="stars">★★★★★</div>
+                        <span class="review-date">1 week ago</span>
+                    </div>
+                    <p>"Perfect for workouts. They stay in place and the water resistance is really good. Great bass!"</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Vikram Joshi</strong>
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                    <p>"Good value for money. Touch controls are responsive. Case could be slightly smaller though."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Meera Shah</strong>
+                        <div class="stars">★★★★★</div>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                    <p>"Crystal clear call quality. Perfect for work from home setup. Quick charging is a lifesaver!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab functionality
+function openTab(event, tabName) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    // Remove active class from all buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+    
+    // Show selected tab and mark button as active
+    document.getElementById(tabName).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
+
+
+function changeImage(clickedImg) {
+    // Main image element को find करें
+    const mainImage = document.getElementById('mainImage');
+    
+    // Clicked thumbnail की src को main image में set करें
+    mainImage.src = clickedImg.src;
+    
+    // Alt text भी update करें
+    mainImage.alt = clickedImg.alt;
+}
+
+
+function increaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const maxValue = parseInt(quantityInput.max) || 10;
+    
+    if (currentValue < maxValue) {
+        quantityInput.value = currentValue + 1;
+    }
+}
+
+function decreaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const minValue = parseInt(quantityInput.min) || 1;
+    
+    if (currentValue > minValue) {
+        quantityInput.value = currentValue - 1;
+    }
+}
+
+// Cart management with localStorage
+class ShoppingCart {
+    constructor() {
+        this.cart = this.loadCart();
+        this.updateCartCount();
+    }
+    
+    addToCart(product) {
+        const quantity = parseInt(document.getElementById('quantity').value) || 1;
+        const existingItem = this.cart.find(item => item.id === product.id);
+        
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            this.cart.push({
+                ...product,
+                quantity: quantity
+            });
+        }
+        
+        this.saveCart();
+        this.updateCartCount();
+        this.showNotification('Product added to cart!');
+    }
+    
+    saveCart() {
+        localStorage.setItem('shopping-cart', JSON.stringify(this.cart));
+    }
+    
+    loadCart() {
+        const savedCart = localStorage.getItem('shopping-cart');
+        return savedCart ? JSON.parse(savedCart) : [];
+    }
+    
+    updateCartCount() {
+        const count = this.cart.reduce((total, item) => total + item.quantity, 0);
+        const cartCountElement = document.querySelector('.cart-count');
+        if (cartCountElement) {
+            cartCountElement.textContent = count;
+        }
+    }
+    
+    showNotification(message) {
+        // Simple notification
+        const notification = document.createElement('div');
+        notification.className = 'cart-notification';
+        notification.textContent = message;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        `;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
+    }
+}
+
+// Initialize cart
+const shoppingCart = new ShoppingCart();
+
+    </script>
+</body>
+</html>

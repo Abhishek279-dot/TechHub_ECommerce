@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyMart</title>
+    <link rel="stylesheet" href="holder2.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a class="logo-name" href="main.html" >Tech Hub </a></h2><p style="font-family:Verdana" >India</p></a></h2>
+            </div>
+            <div class="breadcrumb">
+                <a href="main.html">Home</a> > 
+                <a href="main.html">Products</a> > 
+                <span>Smart Watch</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Container -->
+    <div class="product-detail-container">
+        
+        <!-- Product Images Section -->
+        <div class="product-images">
+            <div class="main-image">
+                <img src="mainwatch.png" alt="Smart Watch" id="mainImage">
+            </div>
+            <div class="thumbnail-images">
+                <img src="mainwatch.png" alt="Earbuds with Case" class="thumbnail active" onclick="changeImage(this)">
+                <img src="smartwatch1.png" alt="Single Earbud" class="thumbnail" onclick="changeImage(this)">
+                <img src="smartwatch2.png" alt="Charging Case" class="thumbnail" onclick="changeImage(this)">
+                <img src="smartwatch3.png" alt="In Use" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Info Section -->
+        <div class="product-info">
+            <div class="product-header">
+                <h1 class="product-name">Smart Watch</h1>
+                <div class="product-rating">
+                    <div class="stars">★★★★☆</div>
+                    <span class="rating-count">4.2 (428 reviews)</span>
+<br>
+                </div>
+<p class="abhi">Premium sound quality, long battery life,and stylish design - perfect for music,gaming.</p>
+
+            </div>
+
+            <div class="price-section">
+                <span class="current-price">₹1099</span>
+                <span class="old-price">₹1,500</span>
+                <span class="discount-percent">30% OFF</span>
+            </div>
+
+            <div class="product-features">
+                <h3>Key Features of product:</h3>
+                <ul>
+                    <li>✓ 🖥 1.96" AMOLED Display – Always-on screen with 600 nits brightness
+</li>
+                    <li>✓💓 Advanced Health Tracking – Heart rate, SpO₂, stress, and sleep monitoring
+
+
+ </li>
+                    <li>✓🔋 Long Battery Life – Up to 12 days on a single charge
+
+
+ </li>
+                    <li>✓💧 IP68 Water & Dust Resistance – Safe for workouts and daily wear
+ </li>
+                    <li>✓🔔 Smart Notifications – Get message, call, and app alerts instantly
+
+ </li>
+                </ul>
+            </div>
+
+            <div class="quantity-section">
+                <label>Quantity:</label>
+                <div class="quantity-controls">
+                    <button onclick="decreaseQty()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button onclick="increaseQty()">+</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-cart-btn">Add to Cart</button>
+                 <button onclick="goToLogin()">Buy Now</button>                
+                
+            </div>
+
+            <div class="delivery-info">
+                <div class="delivery-item">
+                    <strong>🚚 Free Delivery:</strong> Order above ₹500 rupees
+                </div>
+                <div class="delivery-item">
+                    <strong>📦 Expected Delivery:</strong> 4-5 working days
+                </div>
+                <div class="delivery-item">
+                    <strong>↩ Return Policy:</strong> 7 days easy return
+                </div>
+                  <div class="delivery-item">
+                    <strong>💰refund policy:</strong> money deposited in bank account
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Tabs -->
+    <div class="description-container"> 
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'description')">Description</button>
+            <button class="tab-button" onclick="openTab(event, 'specifications')">Specifications</button>
+            <button class="tab-button" onclick="openTab(event, 'reviews')">Reviews</button>
+        </div>
+
+        <!-- Description Tab -->
+        <div id="description" class="tab-content active">
+            <h3>Product Description</h3>
+            <p>Experience your <strong> Smart Watch </strong> Featuring a 1.96" AMOLED display and advanced health tracking, this smartwatch keeps you connected and in control, whether you’re indoors or outdoors. Track your heart rate, SpO₂, sleep, stress levels, and more with precision. Built-in GPS, Bluetooth 5.3, and long-lasting battery ensure seamless connectivity and uninterrupted performance wherever you go.
+                            </p>
+            
+            
+            <h4>Perfect for:</h4>
+            <ul>
+                <li>🏃‍♂ Workout & Sports Activities (indoor & outdoor)</li>
+                <li>📞 Hands-free Calls </li>
+                <li>🎵 Music & Camera Control</li>
+                <li>✈ Travel & picnic sites</li>
+                <li>💻 Productivity & App Alerts</li>
+                <li>🧘‍♀ Meditation & Relaxation</li>
+            </ul>
+
+            <h4>Design & Technology:</h4>
+            <p>
+                The Realme Watch Vision Pro features a sleek, lightweight design that’s comfortable for all-day wear. Its AMOLED touchscreen delivers vibrant visuals, while IP68 water and dust resistance ensures durability during workouts and outdoor activities. Equipped with advanced sensors, GPS, and smart notifications, it keeps you informed and active with style. Long-lasting battery and fast charging make it a reliable companion for both indoor and outdoor use.           </p>
+        </div>
+
+        <!-- Specifications Tab -->
+        <div id="specifications" class="tab-content">
+            <h3>Technical Specifications</h3>
+            <table class="specs-table">
+                <tr>
+                    <td><strong>Bluetooth Version</strong></td>
+                    <td>Bluetooth 5.3</td>
+                </tr>
+                <tr>
+                    <td><strong>range</strong></td>
+                    <td>upto 15 meters</td>
+                </tr>
+                <tr>
+                    <td><strong>Charging Time</strong></td>
+                    <td>45 minutes (magnetic fast charging)</td>
+                </tr>
+                <tr>
+                    <td><strong>Available Colors</strong></td>
+                    <td>Graphite Black, Ocean Blue, Sunset Gold</td>
+                </tr>
+                <tr>
+                    <td><strong>Compatibility</strong></td>
+                    <td>Android 6.0+ and iOS 12.0+</td>
+                </tr>
+                <tr>
+                    <td><strong>Display</strong></td>
+                    <td>1.96" AMOLED Touchscreen, 600 nits brightness (Always-On Display)</td>
+                </tr>
+                <tr>
+                    <td><strong>GPS</strong></td>
+                    <td>Built-in, multi-satellite system (GPS, GLONASS, Galileo)</td>
+                </tr>
+                <tr>
+                    <td><strong>Weight</strong></td>
+                    <td>38g</td>
+                </tr>
+                <tr>
+                    <td><strong>Warranty</strong></td>
+                    <td>2 Year Manufacturer Warranty</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Reviews Tab -->
+        <div id="reviews" class="tab-content">
+            <h3>Customer Reviews (127)</h3>
+            
+            <div class="review-summary">
+                <div class="overall-rating">
+                    <span class="big-rating">4.3</span>
+                    <div class="stars-large">★★★★☆</div>
+                    <p>Based on 127 reviews</p>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span>5★</span>
+                        <div class="bar"><div class="fill" style="width: 60%"></div></div>
+                        <span>76</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4★</span>
+                        <div class="bar"><div class="fill" style="width: 25%"></div></div>
+                        <span>32</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3★</span>
+                        <div class="bar"><div class="fill" style="width: 10%"></div></div>
+                        <span>13</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2★</span>
+                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                        <span>4</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1★</span>
+                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="individual-reviews">
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Priya K.</strong>
+                        <div class="stars">★★★★★</div>
+                        <span class="review-date">3 days ago</span>
+                    </div>
+                    <p>"The display is gorgeous. Bright, smooth, and feels like a mini phone screen. Health tracking seems quite accurate, and the battery really does last around 10 days. Bluetooth calling is clear even outdoors. Totally worth it at this price."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Amit R.</strong>
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-date">1 week ago</span>
+                    </div>
+                    <p>"Looks premium and fits well on the wrist. The GPS tracking is precise during runs, and notifications come instantly. Only wish the strap quality was a bit softer. Otherwise, great smartwatch for daily use."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Nisha T.</strong>
+                        <div class="stars">★★★☆☆</div>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                    <p>"Nice features on paper, but the step count feels off sometimes. Works fine for casual fitness tracking though. Display and battery are strong points. Okay buy if you’re not too serious about fitness accuracy."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Sonal P.</strong>
+                        <div class="stars">★★☆☆☆</div>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                    <p>"Design is sleek but mine had Bluetooth connection issues after a week. It randomly disconnects from my phone. Hoping a software update fixes it soon."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Tab functionality
+function openTab(event, tabName) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    // Remove active class from all buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+    
+    // Show selected tab and mark button as active
+    document.getElementById(tabName).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
+
+
+function changeImage(clickedImg) {
+    // Main image element को find करें
+    const mainImage = document.getElementById('mainImage');
+    
+    // Clicked thumbnail की src को main image में set करें
+    mainImage.src = clickedImg.src;
+    
+    // Alt text भी update करें
+    mainImage.alt = clickedImg.alt;
+}
+
+
+function increaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const maxValue = parseInt(quantityInput.max) || 10;
+    
+    if (currentValue < maxValue) {
+        quantityInput.value = currentValue + 1;
+    }
+}
+
+function decreaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const minValue = parseInt(quantityInput.min) || 1;
+    
+    if (currentValue > minValue) {
+        quantityInput.value = currentValue - 1;
+    }
+}
+
+// Cart management with localStorage
+class ShoppingCart {
+    constructor() {
+        this.cart = this.loadCart();
+        this.updateCartCount();
+    }
+    
+    addToCart(product) {
+        const quantity = parseInt(document.getElementById('quantity').value) || 1;
+        const existingItem = this.cart.find(item => item.id === product.id);
+        
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            this.cart.push({
+                ...product,
+                quantity: quantity
+            });
+        }
+        
+        this.saveCart();
+        this.updateCartCount();
+        this.showNotification('Product added to cart!');
+    }
+    
+    saveCart() {
+        localStorage.setItem('shopping-cart', JSON.stringify(this.cart));
+    }
+    
+    loadCart() {
+        const savedCart = localStorage.getItem('shopping-cart');
+        return savedCart ? JSON.parse(savedCart) : [];
+    }
+    
+    updateCartCount() {
+        const count = this.cart.reduce((total, item) => total + item.quantity, 0);
+        const cartCountElement = document.querySelector('.cart-count');
+        if (cartCountElement) {
+            cartCountElement.textContent = count;
+        }
+    }
+    
+    showNotification(message) {
+        // Simple notification
+        const notification = document.createElement('div');
+        notification.className = 'cart-notification';
+        notification.textContent = message;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        `;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
+    }
+}
+
+// Initialize cart
+const shoppingCart = new ShoppingCart();
+
+
+function goToLogin() {
+    // Redirect user to your login page
+    window.location.href = 'loginnn.html';  // <-- yaha tumhare login page ka path
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

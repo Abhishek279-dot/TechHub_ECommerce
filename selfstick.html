@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyMart</title>
+    <link rel="stylesheet" href="holder2.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a class="logo-name" href="main.html" >Tech Hub </a></h2><p style="font-family:Verdana" >India</p></a></h2>
+            </div>
+            <div class="breadcrumb">
+                <a href="main.html">Home</a> > 
+                <a href="main.html">Products</a> > 
+                <span>Bluetooth Selfie Stick with Tripod Stand</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Container -->
+    <div class="product-detail-container">
+        
+        <!-- Product Images Section -->
+        <div class="product-images">
+            <div class="main-image">
+                <img src="stick2.png" alt="Bluetooth Selfie Stick" id="mainImage">
+            </div>
+            <div class="thumbnail-images">
+                <img src="stick1.png" alt="Extended View" class="thumbnail active" onclick="changeImage(this)">
+                <img src="stick3.png" alt="Folded View" class="thumbnail" onclick="changeImage(this)">
+                <img src="stick4.png" alt="Bluetooth Remote" class="thumbnail" onclick="changeImage(this)">
+                <img src="stick2.png" alt="Tripod Mode" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Info Section -->
+        <div class="product-info">
+            <div class="product-header">
+                <h1 class="product-name">Selfie Stick with Tripod Stand</h1>
+                <div class="product-rating">
+                    <div class="stars">★★★★☆</div>
+                    <span class="rating-count">4.6 (742 reviews)</span>
+<br>
+                </div>
+<p class="abhi">Capture your best moments effortlessly with this premium <strong>Bluetooth Selfie Stick with Tripod Stand</strong>. Designed for flexibility and stability, it lets you take stunning selfies, group shots, and videos hands-free. The extendable aluminum rod and detachable wireless remote make it ideal for travel, vlogging, and everyday use. Compact, lightweight, and easy to carry — it’s your perfect photography partner anywhere you go.</p>
+
+            </div>
+
+            <div class="price-section">
+                <span class="current-price">₹699</span>
+                <span class="old-price">₹1,099</span>
+                <span class="discount-percent">36% OFF</span>
+            </div>
+
+            <div class="product-features">
+                <h3>Key Features of product:</h3>
+                <ul>
+                    <li>✓📸 Wireless Bluetooth Remote – Click photos easily from a distance.</li>
+                    <li>✓⚙ Adjustable Tripod Stand – Perfect for stable video recording.</li>
+                    <li>✓📱 360° Rotation Holder – Capture shots from any angle.</li>
+                    <li>✓🔋 Long Battery Life – Supports up to 5000 clicks per charge.</li>
+                    <li>✓🧳 Foldable & Portable – Lightweight design for easy travel use.</li>
+                </ul>
+            </div>
+
+            <div class="quantity-section">
+                <label>Quantity:</label>
+                <div class="quantity-controls">
+                    <button onclick="decreaseQty()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button onclick="increaseQty()">+</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-cart-btn">Add to Cart</button>
+                 <button onclick="goToLogin()">Buy Now</button>                
+                
+            </div>
+
+            <div class="delivery-info">
+                <div class="delivery-item">
+                    <strong>🚚 Free Delivery:</strong> Order above ₹500 rupees
+                </div>
+                <div class="delivery-item">
+                    <strong>📦 Expected Delivery:</strong> 4-5 working days
+                </div>
+                <div class="delivery-item">
+                    <strong>↩ Return Policy:</strong> 7 days easy return
+                </div>
+                <div class="delivery-item">
+                    <strong>💰 Refund Policy:</strong> Money deposited in bank account
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Tabs -->
+    <div class="description-container"> 
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'description')">Description</button>
+            <button class="tab-button" onclick="openTab(event, 'specifications')">Specifications</button>
+            <button class="tab-button" onclick="openTab(event, 'reviews')">Reviews</button>
+        </div>
+
+        <!-- Description Tab -->
+        <div id="description" class="tab-content active">
+            <h3>Product Description</h3>
+            <p>Take your photography to the next level with this <strong>Bluetooth Selfie Stick with Tripod Stand</strong>. Designed for smartphones and action cameras, it allows seamless wireless control with its detachable Bluetooth remote. The 360° adjustable phone holder ensures perfect framing for selfies, group photos, or videos. Its strong aluminum build offers excellent stability, while the foldable design makes it pocket-friendly and travel-ready.</p>
+            
+            <h4>Perfect for:</h4>
+            <ul>
+                <li>📱 Selfies, Reels & Vlogs</li>
+                <li>🎥 Stable Video Recording</li>
+                <li>🧍 Group Photos & Travel</li>
+                <li>🧳 Compact Carry Design</li>
+            </ul>
+
+            <h4>Design & Technology:</h4>
+            <p>Crafted from premium aluminum alloy, this selfie stick is lightweight yet durable. The Bluetooth 5.0 remote offers instant pairing and smooth shutter response up to 10 meters. It doubles as a mini tripod for hands-free recording, making it perfect for content creators, vloggers, and travelers. With anti-slip feet and an adjustable mount, your shots stay steady in any environment.</p>
+        </div>
+
+        <!-- Specifications Tab -->
+        <div id="specifications" class="tab-content">
+            <h3>Technical Specifications</h3>
+            <table class="specs-table">
+                <tr>
+                    <td><strong>Type</strong></td>
+                    <td>Bluetooth Selfie Stick with Tripod</td>
+                </tr>
+                <tr>
+                    <td><strong>Material</strong></td>
+                    <td>Aluminum Alloy + ABS Plastic</td>
+                </tr>
+                <tr>
+                    <td><strong>Bluetooth Version</strong></td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td><strong>Battery Life</strong></td>
+                    <td>Up to 5000 clicks per charge</td>
+                </tr>
+                <tr>
+                    <td><strong>Extendable Length</strong></td>
+                    <td>20 cm to 100 cm</td>
+                </tr>
+                <tr>
+                    <td><strong>Rotation</strong></td>
+                    <td>360° Adjustable Phone Holder</td>
+                </tr>
+                <tr>
+                    <td><strong>Tripod Height</strong></td>
+                    <td>Up to 80 cm (Extended)</td>
+                </tr>
+                <tr>
+                    <td><strong>Compatibility</strong></td>
+                    <td>Android & iOS Devices</td>
+                </tr>
+                <tr>
+                    <td><strong>Weight</strong></td>
+                    <td>130g</td>
+                </tr>
+                <tr>
+                    <td><strong>Warranty</strong></td>
+                    <td>1 Year Manufacturer Warranty</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Reviews Tab -->
+        <div id="reviews" class="tab-content">
+            <h3>Customer Reviews (742)</h3>
+            
+            <div class="review-summary">
+                <div class="overall-rating">
+                    <span class="big-rating">4.6</span>
+                    <div class="stars-large">★★★★☆</div>
+                    <p>Based on 742 reviews</p>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span>5★</span>
+                        <div class="bar"><div class="fill" style="width: 60%"></div></div>
+                        <span>440</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4★</span>
+                        <div class="bar"><div class="fill" style="width: 25%"></div></div>
+                        <span>190</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3★</span>
+                        <div class="bar"><div class="fill" style="width: 10%"></div></div>
+                        <span>75</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2★</span>
+                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                        <span>25</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1★</span>
+                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                        <span>12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="individual-reviews">
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Advait Salvi.</strong>
+                        <div class="stars">★★★★★</div>
+                        <span class="review-date">2 days ago</span>
+                    </div>
+                    <p>"Lightweight and easy to use. Bluetooth pairs instantly and the tripod is very stable."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Sumit Bhise.</strong>
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-date">1 week ago</span>
+                    </div>
+                    <p>"Really handy for travel. Remote works great, and build quality is solid for the price."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Abhi Swami.</strong>
+                        <div class="stars">★★★☆☆</div>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                    <p>"Good stick overall, though the phone holder could’ve been a little tighter."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Suddha Tammtha.</strong>
+                        <div class="stars">★★☆☆☆</div>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                    <p>"Average product. Works fine but not very strong when fully extended."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+/* Your existing JS remains unchanged */
+function openTab(event, tabName) {
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => content.classList.remove('active'));
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => button.classList.remove('active'));
+    document.getElementById(tabName).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
+
+function changeImage(clickedImg) {
+    const mainImage = document.getElementById('mainImage');
+    mainImage.src = clickedImg.src;
+    mainImage.alt = clickedImg.alt;
+}
+
+function increaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const maxValue = parseInt(quantityInput.max) || 10;
+    if (currentValue < maxValue) quantityInput.value = currentValue + 1;
+}
+
+function decreaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const minValue = parseInt(quantityInput.min) || 1;
+    if (currentValue > minValue) quantityInput.value = currentValue - 1;
+}
+
+class ShoppingCart {
+    constructor() {
+        this.cart = this.loadCart();
+        this.updateCartCount();
+    }
+    addToCart(product) {
+        const quantity = parseInt(document.getElementById('quantity').value) || 1;
+        const existingItem = this.cart.find(item => item.id === product.id);
+        if (existingItem) existingItem.quantity += quantity;
+        else this.cart.push({ ...product, quantity });
+        this.saveCart();
+        this.updateCartCount();
+        this.showNotification('Product added to cart!');
+    }
+    saveCart() {
+        localStorage.setItem('shopping-cart', JSON.stringify(this.cart));
+    }
+    loadCart() {
+        const savedCart = localStorage.getItem('shopping-cart');
+        return savedCart ? JSON.parse(savedCart) : [];
+    }
+    updateCartCount() {
+        const count = this.cart.reduce((total, item) => total + item.quantity, 0);
+        const cartCountElement = document.querySelector('.cart-count');
+        if (cartCountElement) cartCountElement.textContent = count;
+    }
+    showNotification(message) {
+        const notification = document.createElement('div');
+        notification.className = 'cart-notification';
+        notification.textContent = message;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        `;
+        document.body.appendChild(notification);
+        setTimeout(() => notification.remove(), 3000);
+    }
+}
+const shoppingCart = new ShoppingCart();
+
+function goToLogin() {
+    // Redirect user to your login page
+    window.location.href = 'loginnn.html';  // <-- yaha tumhare login page ka path
+}
+
+
+
+</script>
+</body>
+</html>

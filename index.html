@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech- Hub India</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- 🔥 Top Notification Slider -->
+  <div class="swiper top-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">🔥 Mega Sale! Flat 50% OFF on Electronics – Limited Time Only!</div>
+      <div class="swiper-slide">🎁 Buy 1 Get 1 FREE on Mobile Accessories!</div>
+      <div class="swiper-slide">🎉 Festive Offer: Upto 60% OFF on Mobile Accessories</div>
+      <div class="swiper-slide">💳 Extra 10% OFF with HDFC & SBI Cards</div>
+      <div class="swiper-slide">🕒 Hurry! Flash Sale Ends Today!</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">🛒</div>
+                <div class="logo-text">
+                    <h1>TechHub</h1>
+                    <span>INDIA</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#products" class="nav-link" onclick="scrollToProducts()">Products</a></li>
+                <li><a href="#" class="nav-link">Categories</a></li>
+                <li><a href="contactUs.html" class="nav-link"  onclick="scrollToProducts()">Contact</a></li>
+                <li><a href="aboutUS.html" class="nav-link">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                 <input type="text" class="search-input" placeholder="Search products..." id="productSearch">
+                 <span class="search-icon" id="searchBtn">🔍</span>
+                </div>
+                
+                <!-- Navbar में cart button को update करो -->
+<button class="modern-cart-btn" onclick="toggleCart()">
+    <div class="cart-icon-wrapper">
+        <div class="cart-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V16.5M9 19.5C9.8 19.5 10.5 20.2 10.5 21S9.8 22.5 9 22.5 7.5 21.8 7.5 21 8.2 19.5 9 19.5ZM20 19.5C20.8 19.5 21.5 20.2 21.5 21S20.8 22.5 20 22.5 18.5 21.8 18.5 21 19.2 19.5 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="cart-badge" id="cartCount">0</span>
+        </div>
+    </div>
+    <div class="cart-text">
+        <span class="cart-label">Cart</span>
+    </div>
+    <div class="cart-arrow">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+</button>
+
+<!-- Cart Sidebar/Modal add करो -->
+<div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button onclick="toggleCart()">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+        <!-- Cart items dynamically add होंगे -->
+    </div>
+    <div class="cart-total">
+        <strong>Total: ₹<span id="cartTotal">0</span></strong>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </nav>
+  <h2 class="headcat">Explore Our Category's</h2>
+
+  <!-- Categories -->
+  <div class="container">
+    <div class="categories-grid">
+      <div class="category-item">
+        <div class="category-circle">
+          <img src="power.png" alt="Power Banks" class="category-image" onclick="window.location.href='powerbank.html'" >
+        </div>
+        <h3>Power Banks</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-circle">
+          <img src="charg.png" alt="Chargers" class="category-image" onclick="window.location.href='miadpter.html'" >
+        </div>
+        <h3>Chargers & Cables</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-circle">
+          <img src="holder.png" alt="Device Holder" class="category-image" onclick="window.location.href='holder2.html'">
+        </div>
+        <h3>Device Holder</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-circle">
+          <img src="earbuds.png" alt="Audio Devices" class="category-image" onclick="window.location.href='RealmeEarbuds.html'">
+        </div>
+        <h3>Audio Devices</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-circle">
+          <img src="car.png" alt="Car & Travel" class="category-image" onclick="window.location.href='gopro.html'">
+        </div>
+        <h3>Car & Travel</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-circle">
+          <img src="other.png" alt="Other Utilities" class="category-image" onclick="scrollToProducts()">
+        </div>
+        <h3>Other Utilities</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner Image Swiper -->
+  <div class="swiper banner-image-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="banner.png" alt="Banner 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="banner1.jpeg" alt="Banner 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="banner3.jpeg" alt="Banner 3">
+      </div>
+
+            <div class="swiper-slide">
+        <img src="banner4.jpeg" alt="Banner 3">
+      </div>
+
+            <div class="swiper-slide">
+        <img src="banner6.jpeg" alt="Banner 3">
+      </div>
+
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination banner-image-pagination"></div>
+  </div>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <div class="search-container">
+      <h2 class="search-heading">START YOUR SEARCH</h2>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown('deviceDropdown')">
+           Search Products ▼
+          </button>
+          <div class="dropdown-content" id="deviceDropdown">
+            
+            <a href="vivoprotech.html" onclick="Product('Mobile Phone')">Vivo Y29 5G Tempered Glass Screen Protector</a>
+            <a href="vivobackcover.html" onclick="Product('Tablet')">Vivo Y29 5G Back Cover</a>
+            <a href="adneckband.html" onclick="Product('Laptop')">Wireless Bluetooth Neckband</a>
+            <a href="s25case.html" onclick="Product('Laptop')">Samsung S25 Case Cover</a>
+            <a href="blutoothspeaker.html" onclick="Product('Laptop')">Blutooth Speaker</a>
+            <a href="cable.html" onclick="Product('Laptop')">Type-C Cable</a>
+            <a href="holder2.html" onclick="Product('Laptop')">Phone Holder Stand</a>
+            <a href="powerbank.html" onclick="Product('Laptop')">MI PowerBank</a>
+            <a href="RealmeEarbuds.html" onclick="Product('Laptop')">Realme Earbuds</a>
+            <a href="earbuds.html" onclick="Product('Laptop')">Wireless Bluetooth Headset</a>
+            <a href="s25protech.html" onclick="Product('Laptop')">GALAXY S25 Screen Protecto</a>
+            <a href="wirelesscharger.html" onclick="Product('Laptop')">Xiaomi Charger (33w)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <div class="page-container" id="products">
+    <h1 class="page-title"><marquee>Our Products</marquee></h1>
+    
+    <div class="products-container">
+      
+      <!-- WORKING CLICKABLE PRODUCT CARD 1 -->
+      <div class="product-card" onclick="window.location.href='bluetoothspeaker.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">30% OFF</div>
+          <img src="specker2.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Blutooth Speaker</div>
+          <div class="rating-section">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">3.4 (88 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹999</span>
+            <span class="old-price">₹899</span>
+          </div>
+          <div class="product-description">
+            15W fast wireless charging pad with LED indicator and anti-slip surface.
+          </div>
+         <!-- Update your product card buttons -->
+            <div class="button-container">
+                   <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('speaker-1', 'Bluetooth Speaker', 999, 'specker2.png')">Add to Cart</button>
+                 <button onclick="goToLogin()">Buy Now</button>                
+
+      <!-- login modal -->
+<div id="loginModal">
+  <div class="modal-content">
+    <h3>Login to Confirm Order</h3>
+    <input type="text" id="username" placeholder="Enter Username or ID">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button id="confirmOrderBtn">Confirm Order</button>
+    <button id="closeModal">Cancel</button>
+    <p id="errorMsg"></p>
+  </div>
+</div>
+
+<!-- confirmation message -->
+<div id="confirmBox">
+  <h2>✅ Order Confirmed!</h2>
+  <p id="userMsg">Thank you for shopping with us.</p>
+</div>
+
+
+           </div>
+
+        </div>
+      </div>
+
+
+
+            <!-- WORKING CLICKABLE PRODUCT CARD 2 -->
+
+        <div class="product-card" onclick="window.location.href='cable.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">25% OFF</div>
+          <img src="cabal.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Type-C Cable</div>
+          <div class="rating-section">
+            <div class="stars">★★★☆☆</div>
+            <div class="rating-text">4.0 (732 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹449</span>
+            <span class="old-price">₹599</span>
+          </div>
+          <div class="product-description">
+           Durable, high-speed, and reliable – charge and sync your devices with ease.
+          </div>
+            <div class="button-container">
+                       <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('product-typec-cable', 'Type-C Cable', 449, 'cabal.png', this)">Add to Cart</button>
+                      <button class="buy-now" onclick="event.stopPropagation(); buyNow('speaker-1', 'Type-C Cable', 449)">Buy Now</button>
+           </div>
+        </div>
+      </div>
+
+
+            <!-- Add more product cards here 3 -->
+
+
+
+
+       <div class="product-card" onclick="window.location.href='holder2.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">40% OFF</div>
+          <img src="holder2.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Phone Holder Stand</div>
+          <div class="rating-section">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">4.8 (92 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹799</span>
+            <span class="old-price">₹1,299</span>
+          </div>
+          <div class="product-description">
+           The Adjustable Phone Holder Stand is your perfect companion for hands-free phone usage.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('product-phone-holder', 'Phone Holder Stand', 799, 'holder2.png', this)">Add to Cart</button>            
+            <button type="button" id="buyNowBtn" onclick="event.stopPropagation()">Buy Now</button>
+           </div>
+        </div>
+      </div>
+
+            <!-- Add more product cards here 4 -->
+
+
+
+       <div class="product-card" onclick="window.location.href='powerbank.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">25% OFF</div>
+          <img src="powerbank1.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">MI PowerBank</div>
+          <div class="rating-section">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">4.8 (92 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹1099</span>
+            <span class="old-price">₹1499</span>
+          </div>
+          <div class="product-description">
+           Compact, easy to carry, powerfull & reliable - keep your devices charged at anytime, anywhere.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('product-mi-powerbank', 'MI PowerBank', 1099, 'powerbank1.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+            <!-- Add more product cards here 5 -->
+
+
+
+       <div class="product-card" onclick="window.location.href='RealmeEarbuds.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">35% OFF</div>
+          <img src="realmeear1.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Realme Earbuds</div>
+          <div class="rating-section">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">4.8 (92 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹990</span>
+            <span class="old-price">1,399</span>
+          </div>
+          <div class="product-description">
+            Premium sound quality, long battery life,and stylish design - perfect for music,gaming.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Realme Earbuds', 'Realme Earbuds', 990, 'realmeear1.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+            <!-- Add more product cards here 6 -->
+
+
+
+       <div class="product-card" onclick="window.location.href='earbuds.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">25% OFF</div>
+          <img src="blutut.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Wireless Bluetooth Headset</div>
+          <div class="rating-section">
+            <div class="stars">★★★★☆</div>
+            <div class="rating-text">4.3 (127 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹1,499</span>
+            <span class="old-price">₹1,999</span>
+          </div>
+        <div class="product-description">
+      Professional gaming headset with 50mm drivers, RGB accent lighting.
+
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Wireless Bluetooth Headset', 'Wireless Bluetooth Headset', 1499, 'blutut.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+            <!-- Add more product cards here 7 -->
+
+
+
+       <div class="product-card" onclick="window.location.href='smartwatch.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">30% OFF</div>
+          <img src="mainwatch.png" alt="Wireless Charger">
+        </div>        <div class="card-content">
+          <div class="product-title">Smart Watch</div>
+          <div class="rating-section">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">4.2 (428 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹1099</span>
+            <span class="old-price">₹1,500</span>
+          </div>
+          <div class="product-description">
+            Premium sound quality, long battery life,and stylish design - perfect for music,gaming.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Smart Watch', 'Smart Watch', 1099, 'mainwatch.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Add more product cards here 8 -->  
+
+
+
+       <div class="product-card" onclick="window.location.href='miadpter.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">20% OFF</div>
+          <img src="mipower2.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Xiaomi Charger (33w)</div>
+          <div class="rating-section">
+            <div class="stars">★★★★☆</div>
+            <div class="rating-text">4.3 (4111 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹999</span>
+            <span class="old-price">₹1,199</span>
+          </div>
+          <div class="product-description">
+           Fast, safe, and reliable – charge your devices at blazing speed with Mi’s 33W power adapter.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Xiaomi Charger (33w)', 'Xiaomi Charger (33w)', 999, 'mipower2.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+            <!-- WORKING CLICKABLE PRODUCT CARD 9 -->
+
+
+            <div class="product-card" onclick="window.location.href='gopro.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">40% OFF</div>
+          <img src="webcam.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Go Pro</div>
+          <div class="rating-section">
+            <div class="stars">★★★☆☆</div>
+            <div class="rating-text">3.2 (298 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹55,100</span>
+            <span class="old-price">₹88,999</span>
+          </div>
+          <div class="product-description">
+           Premium build quality, long battery life,and stylish design - perfect for car,moterbick.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Go Pro', 'Go Pro', 55100, 'webcam.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+                  <!-- WORKING CLICKABLE PRODUCT CARD 10 -->
+
+
+            <div class="product-card" onclick="window.location.href='s25protech.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">40% OFF</div>
+          <img src="mainprotech.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">GALAXY S25 Screen Protector</div>
+          <div class="rating-section">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">4.2 (320 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹399</span>
+            <span class="old-price">₹600</span>
+          </div>
+          <div class="product-description">
+            Crystal-clear protection with anti-glare technology – keep your Galaxy S25 Ultra screen safe, smooth, and smudge-free.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('GALAXY S25 Screen Protector', 'GALAXY S25 Screen Protector', 399, 'mainprotech.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+                  <!-- WORKING CLICKABLE PRODUCT CARD 11 -->
+
+
+            <div class="product-card" onclick="window.location.href='s25case.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">45% OFF</div>
+          <img src="s25case1.png" alt="Samsung S25 Case Cover">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Samsung S25 Case Cover</div>
+          <div class="rating-section">
+            <div class="stars">★★★★☆</div>
+            <div class="rating-text">4.2 (8723 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹299</span>
+            <span class="old-price">₹399</span>
+          </div>
+          <div class="product-description">
+            Premium design with ultimate protection – keep your Galaxy S25 Ultra safe from drops, scratches, and dust.
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Samsung S25 Case Cover', 'Samsung S25 Case Cover', 299, 's25case1.png', this)">Add to Cart</button>            
+                 <button onclick="goToLogin()">Buy Now</button>                
+          </div>
+        </div>
+      </div>
+
+
+
+                  <!-- WORKING CLICKABLE PRODUCT CARD 12 -->
+
+
+            <div class="product-card" onclick="window.location.href='selfstick.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">40% OFF</div>
+          <img src="stick2.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Selfie Stick with Tripod Stand</div>
+          <div class="rating-section">
+            <div class="stars">★★★☆☆</div>
+            <div class="rating-text">3.2 (298 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹699</span>
+            <span class="old-price">₹1,499</span>
+          </div>
+          <div class="product-description">
+          Experience immersive sound and long-lasting comfort with our premium Bluetooth neckband. 
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Selfie Stick with Tripod Stand', 'Selfie Stick with Tripod Stand', 699, 'stick2.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+                  <!-- WORKING CLICKABLE PRODUCT CARD 13 -->
+
+
+            <div class="product-card" onclick="window.location.href='adneckband.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">40% OFF</div>
+          <img src="nick1.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Wireless Bluetooth Neckband</div>
+          <div class="rating-section">
+            <div class="stars">★★★☆☆</div>
+            <div class="rating-text">3.2 (298 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹899</span>
+            <span class="old-price">₹1,499</span>
+          </div>
+          <div class="product-description">
+          Experience immersive sound and long-lasting comfort with our premium Bluetooth neckband. 
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Wireless Bluetooth Neckband', 'Wireless Bluetooth Neckband', 899, 'nick1.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+                        <!-- WORKING CLICKABLE PRODUCT CARD 14 -->
+
+
+            <div class="product-card" onclick="window.location.href='vivobackcover.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">40% OFF</div>
+          <img src="vivocover1.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Vivo Y29 5G Back Cover</div>
+          <div class="rating-section">
+            <div class="stars">★★★★☆</div>
+            <div class="rating-text">4.8 (482 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹299</span>
+            <span class="old-price">₹399</span>
+          </div>
+          <div class="product-description">
+         Premium build quality, long-lasting durability Vivo Y29 5G. 
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Vivo Y29 5G Back Cover', 'Vivo Y29 5G Back Cover', 299, 'vivocover1.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+                        <!-- WORKING CLICKABLE PRODUCT CARD 15 -->
+
+
+           <div class="product-card" onclick="window.location.href='pocket.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">20% OFF</div>
+          <img src="vivoprotech2.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Vivo Y29 5G Tempered Glass Screen Protector</div>
+          <div class="rating-section">
+            <div class="stars">★★★★☆</div>
+            <div class="rating-text">4.8 (482 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹199</span>
+            <span class="old-price">₹399</span>
+          </div>
+          <div class="product-description">
+          Premium build quality and a stylish design make this screen perfect for your Vivo Y29 5G. 
+          </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Vivo Y29 5G Tempered Glass Screen Protector', 'Vivo Y29 5G Tempered Glass Screen Protector', 199, 'vivoprotech2.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+                              <!-- WORKING CLICKABLE PRODUCT CARD 16 -->
+
+
+           <div class="product-card" onclick="window.location.href='pocket.html'" style="cursor: pointer;">
+        <div class="card-image">
+          <div class="discount-badge">33% OFF</div>
+          <img src="pocket.png" alt="Wireless Charger">
+        </div>
+        <div class="card-content">
+          <div class="product-title">Sky Blue Waterproof Phone Pouch</div>
+          <div class="rating-section">
+            <div class="stars">★★★★☆</div>
+            <div class="rating-text">4.5 (287 reviews)</div>
+          </div>
+          <div class="price-section">
+            <span class="current-price">₹399</span>
+            <span class="old-price">₹599</span>
+          </div>
+          <div class="product-description">
+IPX8 certified waterproof pouch in stunning sky blue.        </div>
+          <div class="button-container">
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Vivo Y29 5G Tempered Glass Screen Protector', 'Vivo Y29 5G Tempered Glass Screen Protector', 199, 'vivoprotech2.png', this)">Add to Cart</button>            
+            <button class="buy-now" onclick="event.stopPropagation(); alert('Buy Now!')">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub India - Features</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            padding: 40px 0;
+        }
+
+        .features-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 5%;
+        }
+
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon-circle {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, #87CEEB 0%, #4DD0E1 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(135, 206, 235, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .feature-card:hover .icon-circle {
+            box-shadow: 0 12px 35px rgba(135, 206, 235, 0.5);
+            transform: scale(1.05);
+        }
+
+        .icon-svg {
+            width: 55px;
+            height: 55px;
+            fill: white;
+            stroke: white;
+            stroke-width: 2;
+        }
+
+        .free-badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: white;
+            color: #03045E;
+            font-size: 0.65rem;
+            font-weight: bold;
+            padding: 3px 7px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            color: #03045E;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        @media (max-width: 1024px) {
+            .features-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .features-section {
+                padding: 40px 5%;
+            }
+
+            .features-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .icon-circle {
+                width: 100px;
+                height: 100px;
+            }
+
+            .icon-svg {
+                width: 45px;
+                height: 45px;
+            }
+
+            .feature-title {
+                font-size: 1.3rem;
+            }
+
+            .feature-description {
+                font-size: 0.95rem;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .feature-card {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .feature-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .feature-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .feature-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .feature-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <section class="features-section">
+        <div class="features-container">
+            
+            <div class="feature-card">
+                <div class="icon-circle">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none">
+                        <path d="M1 5h14v10H1V5z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 5h3l3 4v6h-6V5z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="5.5" cy="18.5" r="2.5"/>
+                        <circle cx="18.5" cy="18.5" r="2.5"/>
+                        <path d="M8 18h8" stroke-linecap="round"/>
+                    </svg>
+                    <span class="free-badge">FREE</span>
+                </div>
+                <h3 class="feature-title">Free Shipping</h3>
+                <p class="feature-description">Orders over ₹500</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-circle">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 7l-2-2H6L4 7v10l2 2h12l2-2V7z" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 2v5M9 5l3-3 3 3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 12l2 2 4-4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Quality Assured</h3>
+                <p class="feature-description">100% genuine products with warranty</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-circle">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">24/7 Support</h3>
+                <p class="feature-description">WhatsApp & call support available</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-circle">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 9l2.5 3.5L7 16M17 9l-2.5 3.5L17 16" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <text x="12" y="15" text-anchor="middle" fill="white" font-size="8" font-weight="bold">%</text>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Best Prices</h3>
+                <p class="feature-description">Competitive prices with regular offers</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+<!-- footter section -->
+
+<footer class="footer">
+    <div class="footer-container">
+        
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            
+            <!-- Company Info Column -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <div class="logo-icon">🛒</div>
+                    <div class="logo-text">
+                        <h3>TechHub</h3>
+                        <span>INDIA</span>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    Your trusted partner for premium mobile accessories. Quality products, competitive prices, and exceptional customer service.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i>📘</i></a>
+                    <a href="#" class="social-link"><i>📷</i></a>
+                    <a href="#" class="social-link"><i>🐦</i></a>
+                    <a href="https://wa.me/919650673048" class="social-link"><i>💬</i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="footer-column">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                    <li><a href="#" onclick="toggleCart()">My Cart</a></li>
+                </ul>
+            </div>
+
+            <!-- Product Categories Column -->
+            <div class="footer-column">
+                <h4 class="footer-title">Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="powerbank.html">Power Banks</a></li>
+                    <li><a href="miadpter.html">Chargers & Cables</a></li>
+                    <li><a href="holder2.html">Device Holders</a></li>
+                    <li><a href="RealmeEarbuds.html">Audio Devices</a></li>
+                    <li><a href="gopro.html">Car & Travel</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service Column -->
+            <div class="footer-column">
+                <h4 class="footer-title">Customer Service</h4>
+                <ul class="footer-links">
+                    <li><a href="#help">Help Center</a></li>
+                    <li><a href="#returns">Returns & Refunds</a></li>
+                    <li><a href="#shipping">Shipping Info</a></li>
+                    <li><a href="#warranty">Warranty</a></li>
+                    <li><a href="#track">Track Order</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Column -->
+            <div class="footer-column">
+                <h4 class="footer-title">Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-details">
+                            <p>Modern Building No. 13279</p>
+                            <p>Pune, Maharashtra 110005</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-details">
+                            <p>+91 7058505251</p>
+                            <p>+91 9168144066</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div class="contact-details">
+                            <p>techhub@gmail.com</p>
+                            <p>support@techhubindia.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 TechHub India. All Rights Reserved.</p>
+                    <p>Designed & Developed by Team TechHub</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+ 
+  <script src="script.js"></script>
+
+
+ 
+</body>
+</html>
