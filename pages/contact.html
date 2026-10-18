@@ -59,7 +59,7 @@
   <section class="contact-section">
     <div class="contact-form">
       <h2>Send us a Message</h2>
-      <form>
+      <form id="contactForm">
         <label>Full Name *</label>
         <input type="text" placeholder="Enter your full name" required>
 
@@ -80,7 +80,8 @@
         <label>Message *</label>
         <textarea placeholder="Tell us how we can help you..." maxlength="1000" required></textarea>
 
-        <button class="submit-btn">Send Message</button>
+        <button class="submit-btn" type="submit">Send Message</button>
+        <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
 
@@ -94,5 +95,6 @@
     <a href="tel:+91 7058505251">Call Now</a>
     <a href="https://wa.me/919650673048">WhatsApp</a>
   </div>
+  <script src="../js/contact.js"></script>
 </body>
 </html>

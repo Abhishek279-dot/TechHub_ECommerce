@@ -22,6 +22,13 @@ document.querySelectorAll('.thumbnail').forEach((thumb) => {
   });
 });
 
+// Keep the selected thumbnail aligned with the image shown on first load.
+const initialThumbnail = [...document.querySelectorAll('.thumbnail')].find(
+  (thumb) => thumb.getAttribute('src') === mainImage.getAttribute('src')
+);
+document.querySelectorAll('.thumbnail').forEach((thumb) => thumb.classList.remove('active'));
+initialThumbnail?.classList.add('active');
+
 /* ---------- Tabs ---------- */
 
 document.querySelectorAll('.tab-button').forEach((button) => {
@@ -44,6 +51,15 @@ document.querySelectorAll('[data-qty]').forEach((button) => {
   });
 });
 
+function normalizeQuantity() {
+  const min = parseInt(quantityInput.min, 10) || 1;
+  const max = parseInt(quantityInput.max, 10) || 10;
+  const value = parseInt(quantityInput.value, 10) || min;
+  quantityInput.value = Math.min(max, Math.max(min, value));
+}
+
+quantityInput.addEventListener('change', normalizeQuantity);
+
 /* ---------- Add to cart / Buy now ---------- */
 
 function getProduct() {
@@ -58,7 +74,8 @@ function getProduct() {
 
 document.querySelector('.add-to-cart-btn').addEventListener('click', (event) => {
   const product = getProduct();
-  const quantity = parseInt(quantityInput.value, 10) || 1;
+  normalizeQuantity();
+  const quantity = parseInt(quantityInput.value, 10);
   cart.add(product, quantity);
   showNotification(`${product.name} added to cart!`);
 

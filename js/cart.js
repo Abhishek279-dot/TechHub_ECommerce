@@ -8,18 +8,39 @@ const cart = {
 
   load() {
     try {
-      this.items = JSON.parse(localStorage.getItem(CART_KEY)) || [];
+      const savedItems = JSON.parse(localStorage.getItem(CART_KEY));
+      this.items = Array.isArray(savedItems)
+        ? savedItems.filter(
+            (item) =>
+              item &&
+              typeof item.id === 'string' &&
+              typeof item.name === 'string' &&
+              Number.isFinite(Number(item.price)) &&
+              Number(item.price) >= 0 &&
+              Number.isInteger(Number(item.quantity)) &&
+              Number(item.quantity) > 0
+          ).map((item) => ({
+            ...item,
+            price: Number(item.price),
+            quantity: Number(item.quantity),
+          }))
+        : [];
     } catch {
       this.items = [];
     }
   },
 
   save() {
-    localStorage.setItem(CART_KEY, JSON.stringify(this.items));
+    try {
+      localStorage.setItem(CART_KEY, JSON.stringify(this.items));
+    } catch {
+      // Keep the in-memory cart usable when storage is blocked or unavailable.
+    }
   },
 
   /** Add a product, or increase its quantity if it is already in the cart. */
   add({ id, name, price, image }, quantity = 1) {
+    quantity = Math.max(1, Number.parseInt(quantity, 10) || 1);
     const existing = this.items.find((item) => item.id === id);
     if (existing) {
       existing.quantity += quantity;

@@ -5,28 +5,30 @@ const LOGIN_URL = 'pages/login.html';
 
 /* ---------- Sliders ---------- */
 
-new Swiper('.top-slider', {
-  slidesPerView: 1,
-  loop: true,
-  autoplay: { delay: 2500, disableOnInteraction: false },
-  navigation: {
-    nextEl: '.top-slider .swiper-button-next',
-    prevEl: '.top-slider .swiper-button-prev',
-  },
-});
+if (typeof Swiper === 'function') {
+  new Swiper('.top-slider', {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: { delay: 2500, disableOnInteraction: false },
+    navigation: {
+      nextEl: '.top-slider .swiper-button-next',
+      prevEl: '.top-slider .swiper-button-prev',
+    },
+  });
 
-new Swiper('.banner-image-swiper', {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  loop: true,
-  speed: 800,
-  autoplay: { delay: 2000, disableOnInteraction: false },
-  pagination: { el: '.banner-image-pagination', clickable: true },
-  navigation: {
-    nextEl: '.banner-image-swiper .swiper-button-next',
-    prevEl: '.banner-image-swiper .swiper-button-prev',
-  },
-});
+  new Swiper('.banner-image-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    speed: 800,
+    autoplay: { delay: 2000, disableOnInteraction: false },
+    pagination: { el: '.banner-image-pagination', clickable: true },
+    navigation: {
+      nextEl: '.banner-image-swiper .swiper-button-next',
+      prevEl: '.banner-image-swiper .swiper-button-prev',
+    },
+  });
+}
 
 /* ---------- Cart sidebar ---------- */
 
