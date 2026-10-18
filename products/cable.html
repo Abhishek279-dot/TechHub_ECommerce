@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyMart</title>
+    <title>Wireless Bluetooth Earbuds - SkyMart</title>
+
+
+         <style>
+        /* Buy Now Button Style */
+/* Buy Now button styled like Add to Cart */
+.buy-now-btn {
+    width: 150px; /* ya same width as Add to Cart */
+    padding: 10px 20px;
+    border: 2px solid #87CEFA; /* light sky blue border */
+    border-radius: 8px;        /* rounded corners */
+    background-color: white;    /* white background */
+    color: #87CEFA;             /* sky blue text */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #87CEFA; /* fill sky blue on hover */
+    color: white;              /* text turns white */
+}
+
+    </style>
+
+
+
     <link rel="stylesheet" href="../css/holder2.css">
 </head>
 <body>
@@ -11,12 +38,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h2><a class="logo-name" href="../index.html" >Tech Hub </a></h2><p style="font-family:Verdana" >India</p></a></h2>
+                <h2><a href="../index.html">SkyMart</a></h2>
             </div>
             <div class="breadcrumb">
                 <a href="../index.html">Home</a> > 
                 <a href="../index.html#products">Products</a> > 
-                <span>Wireless Bluetooth Neckband</span>
+                <span>TYPE C USB CABAL</span>
             </div>
         </div>
     </nav>
@@ -27,43 +54,54 @@
         <!-- Product Images Section -->
         <div class="product-images">
             <div class="main-image">
-                <img src="../Imagess/Product_Images/wireless-neckband/nick1.png" alt="Neckband" id="mainImage">
+                <img src="../Imagess/Product_Images/type-c-cable/cabal.png" alt="Wireless Bluetooth Earbuds" id="mainImage">
             </div>
             <div class="thumbnail-images">
-                <img src="../Imagess/Product_Images/wireless-neckband/neckband1.png" alt="Side View Neckband" class="thumbnail active" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/wireless-neckband/neckband2.png" alt="Earbuds Close-up" class="thumbnail" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/wireless-neckband/neckband3.png" alt="Charging Cable" class="thumbnail" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/wireless-neckband/neckband2.png" alt="In Use" class="thumbnail" onclick="changeImage(this)">
+                <img src="../Imagess/Product_Images/type-c-cable/cabal.png" alt="Earbuds with Case" class="thumbnail active" onclick="changeImage(this)">
+                <img src="../Imagess/Product_Images/type-c-cable/cabal1.png" alt="Single Earbud" class="thumbnail" onclick="changeImage(this)">
+                <img src="../Imagess/Product_Images/type-c-cable/cabal2.png" alt="Charging Case" class="thumbnail" onclick="changeImage(this)">
+                <img src="../Imagess/Product_Images/type-c-cable/cabal3.png" alt="In Use" class="thumbnail" onclick="changeImage(this)">
             </div>
         </div>
 
         <!-- Product Info Section -->
         <div class="product-info">
             <div class="product-header">
-                <h1 class="product-name">Wireless Bluetooth Neckband</h1>
+                <h1 class="product-name">TYPE C USB CABAL</h1>
                 <div class="product-rating">
-                    <div class="stars">★★★★☆</div>
-                    <span class="rating-count">4.7 (865 reviews)</span>
+                    <div class="stars">★★★☆☆</div>
+                    <span class="rating-count">4.0 (732 reviews)</span>
 <br>
                 </div>
-<p class="abhi">Experience immersive sound and long-lasting comfort with our premium Bluetooth neckband. Designed for music lovers and multitaskers, it delivers crystal-clear audio, deep bass, and reliable Bluetooth 5.3 connectivity. With a lightweight design, magnetic earbuds, and noise-cancellation technology, it’s perfect for gym sessions, travel, or work calls—giving you freedom and style every day.</p>
+<p class="abhi">Durable, high-speed, and reliable – charge and sync your devices with ease.
+
+</p>
 
             </div>
 
             <div class="price-section">
-                <span class="current-price">₹899</span>
-                <span class="old-price">₹1,499</span>
-                <span class="discount-percent">40% OFF</span>
+                <span class="current-price">₹449</span>
+                <span class="old-price">₹599</span>
+                <span class="discount-percent">25% OFF</span>
             </div>
 
             <div class="product-features">
                 <h3>Key Features of product:</h3>
                 <ul>
-                    <li>✓🎵 Deep Bass Sound – Enjoy rich and clear audio quality.</li>
-                    <li>✓🔋 Long Battery Life – Up to 30 hours of playback on a single charge.</li>
-                    <li>✓⚡ Fast Charging – 10 mins charge gives 6 hours of music.</li>
-                    <li>✓🎤 Noise Cancellation – Crystal-clear voice during calls.</li>
-                    <li>✓🧲 Magnetic Earbuds – Easy to carry, tangle-free design.</li>
+                    <li>✓ ⚡ Supports Fast Charging (up to 3A/18W)
+
+</li>
+                    <li>✓ 🔄 High-Speed Data Transfer up to 480Mbps
+
+</li>
+                    <li>✓ 🛡 Durable Braided Design – 5x stronger than regular cables
+</li>
+                    <li>✓ 🔌 Universal Compatibility – Android, laptops, tablets, power banks & more
+
+</li>
+                    <li>✓ 📏 Available Lengths – 1m & 2m options
+
+</li>
                 </ul>
             </div>
 
@@ -79,7 +117,6 @@
             <div class="action-buttons">
                 <button class="add-to-cart-btn">Add to Cart</button>
                  <button onclick="goToLogin()">Buy Now</button>                
-                
             </div>
 
             <div class="delivery-info">
@@ -92,9 +129,10 @@
                 <div class="delivery-item">
                     <strong>↩ Return Policy:</strong> 7 days easy return
                 </div>
-                <div class="delivery-item">
-                    <strong>💰 Refund Policy:</strong> Money deposited in bank account
+                  <div class="delivery-item">
+                    <strong>💰refund policy:</strong> money deposited in bank account
                 </div>
+
             </div>
         </div>
     </div>
@@ -110,18 +148,35 @@
         <!-- Description Tab -->
         <div id="description" class="tab-content active">
             <h3>Product Description</h3>
-            <p>Stay connected and entertained with this <strong>Wireless Bluetooth Neckband</strong> that combines premium sound, long battery life, and a comfortable fit. Whether you’re working out, traveling, or attending calls, its ergonomic design and lightweight frame ensure a secure, all-day wear. Bluetooth 5.3 provides a stable connection, while the noise-canceling mic keeps your calls crystal-clear. With quick charging and deep bass drivers, this neckband is your perfect everyday audio companion.</p>
+            <p> Power up your devices quickly and safely with our premium USB Type-C Charging Cable. Built with high-quality copper wires and a reinforced outer layer, this cable supports fast charging as well as stable data transfer. The strong yet flexible design ensures long-lasting durability, while universal compatibility makes it perfect for smartphones, tablets, laptops, and other USB-C devices.
+                           </p>
+            
             
             <h4>Perfect for:</h4>
             <ul>
-                <li>🎧 Music, Calls, and Workouts</li>
-                <li>🔋 Long Travel and Daily Use</li>
-                <li>🧲 Easy Magnetic Design</li>
-                <li>🎤 Noise-Free Conversations</li>
+                <li>📱 Fast Charging Smartphones & Tablets
+
+</li>
+                <li>💻 Charging Laptops with Type-C Port
+
+</li>
+                <li>🔄 High-Speed Data Transfer
+
+</li>
+                <li>🛠 Reliable Backup Cable for Emergencies
+
+</li>
+                <li>🎮 Gaming Devices & Accessories
+
+</li>
+                
             </ul>
 
             <h4>Design & Technology:</h4>
-            <p>Designed with lightweight silicone neck support and soft magnetic earbuds, this Bluetooth neckband ensures both comfort and convenience. The 10mm dynamic drivers deliver high-fidelity sound with thumping bass. Built with IPX5 water resistance, it’s ideal for gym and outdoor use. Fast charging via Type-C lets you enjoy non-stop music without interruptions.</p>
+            <p>
+                This USB-C cable is engineered with reinforced braided nylon and premium copper wiring for maximum strength and performance. It supports fast charging up to 3A and high-speed data transfer up to 480Mbps. The anti-tangle design makes it easy to carry and store, while the precision connectors ensure a secure fit without loosening or damage over time.
+
+    </p>
         </div>
 
         <!-- Specifications Tab -->
@@ -129,38 +184,43 @@
             <h3>Technical Specifications</h3>
             <table class="specs-table">
                 <tr>
-                    <td><strong>Type</strong></td>
-                    <td>Wireless Bluetooth Neckband</td>
+                    <td><strong>connection type</strong></td>
+                    <td>USB-A to Type-C / USB-C to USB-C (variants)
+
+</td>
                 </tr>
                 <tr>
-                    <td><strong>Bluetooth Version</strong></td>
-                    <td>5.3</td>
+                    <td><strong>output</strong></td>
+                    <td>Up to 3A (fast charging supported)
+
+</td>
                 </tr>
                 <tr>
-                    <td><strong>Battery Life</strong></td>
-                    <td>Up to 30 Hours</td>
+                    <td><strong>data transfer</strong></td>
+                    <td> Up to 480Mbps
+</td>
                 </tr>
                 <tr>
-                    <td><strong>Charging Port</strong></td>
-                    <td>Type-C Fast Charging</td>
+                    <td><strong>material</strong></td>
+                    <td>Braided Nylon + Copper Core
+
+</td>
                 </tr>
                 <tr>
-                    <td><strong>Driver Size</strong></td>
-                    <td>10mm Dynamic Drivers</td>
+                    <td><strong>compatibility</strong></td>
+                    <td>All USB-C supported devices
+</td>
                 </tr>
                 <tr>
-                    <td><strong>Water Resistance</strong></td>
-                    <td>IPX5 Splash Proof</td>
+                    <td><strong>color options</strong></td>
+                    <td>Black, White, Red, Blue
+</td>
                 </tr>
                 <tr>
-                    <td><strong>Noise Cancellation</strong></td>
-                    <td>ENC (Environmental Noise Cancellation)</td>
+                    <td><strong>price</strong></td>
+                    <td>(placeholder): ₹299.00 – ₹499.00 (depending on length)</td>
                 </tr>
-                <tr>
-                    <td><strong>Weight</strong></td>
-                    <td>25g</td>
-                </tr>
-                <tr>
+                                <tr>
                     <td><strong>Warranty</strong></td>
                     <td>1 Year Manufacturer Warranty</td>
                 </tr>
@@ -169,38 +229,38 @@
 
         <!-- Reviews Tab -->
         <div id="reviews" class="tab-content">
-            <h3>Customer Reviews (865)</h3>
+            <h3>Customer Reviews (127)</h3>
             
             <div class="review-summary">
                 <div class="overall-rating">
-                    <span class="big-rating">4.7</span>
+                    <span class="big-rating">4.0</span>
                     <div class="stars-large">★★★★☆</div>
-                    <p>Based on 865 reviews</p>
+                    <p>Based on 732 reviews</p>
                 </div>
                 <div class="rating-breakdown">
                     <div class="rating-bar">
                         <span>5★</span>
-                        <div class="bar"><div class="fill" style="width: 65%"></div></div>
-                        <span>560</span>
+                        <div class="bar"><div class="fill" style="width: 60%"></div></div>
+                        <span>465</span>
                     </div>
                     <div class="rating-bar">
                         <span>4★</span>
                         <div class="bar"><div class="fill" style="width: 25%"></div></div>
-                        <span>220</span>
+                        <span>192</span>
                     </div>
                     <div class="rating-bar">
                         <span>3★</span>
-                        <div class="bar"><div class="fill" style="width: 7%"></div></div>
-                        <span>60</span>
+                        <div class="bar"><div class="fill" style="width: 10%"></div></div>
+                        <span>43</span>
                     </div>
                     <div class="rating-bar">
                         <span>2★</span>
-                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
-                        <span>15</span>
+                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                        <span>33</span>
                     </div>
                     <div class="rating-bar">
                         <span>1★</span>
-                        <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
                         <span>10</span>
                     </div>
                 </div>
@@ -209,101 +269,140 @@
             <div class="individual-reviews">
                 <div class="review-item">
                     <div class="review-header">
-                        <strong>Advait Salvi.</strong>
+                        <strong>siddhi gole</strong>
                         <div class="stars">★★★★★</div>
-                        <span class="review-date">2 days ago</span>
+                        <span class="review-date">3 days ago</span>
                     </div>
-                    <p>"Superb sound and battery life. I charge once and use it for almost 3 days straight."</p>
+                    <p>"amazing cable at that price point , good quality , works very well."</p>
                 </div>
 
                 <div class="review-item">
                     <div class="review-header">
-                        <strong>Sumit Bhise.</strong>
-                        <div class="stars">★★★★☆</div>
+                        <strong>disha mahajan</strong>
+                        <div class="stars">★★★★★</div>
                         <span class="review-date">1 week ago</span>
                     </div>
-                    <p>"Bass is excellent, and mic clarity is solid for calls. Great value for the price."</p>
+                    <p>"best cable for my work at office and home it charges my all devices."</p>
                 </div>
 
                 <div class="review-item">
                     <div class="review-header">
-                        <strong>Abhi Swami.</strong>
-                        <div class="stars">★★★☆☆</div>
+                        <strong>shivani bhise</strong>
+                        <div class="stars">★★★★☆</div>
                         <span class="review-date">2 weeks ago</span>
                     </div>
-                    <p>"Good neckband, fits well. Just wish the cable was a little thicker."</p>
+                    <p>"this is now my primary charging cable for data tranfering in outdoor and indoor activities."</p>
                 </div>
 
                 <div class="review-item">
                     <div class="review-header">
-                        <strong>Suddha Tammtha.</strong>
-                        <div class="stars">★★☆☆☆</div>
+                        <strong>Meera khan</strong>
+                        <div class="stars">★★★★★</div>
                         <span class="review-date">3 weeks ago</span>
                     </div>
-                    <p>"Decent product but battery backup slightly less than claimed."</p>
+                    <p>"the speed of tranfering data is very fast at that price."</p>
                 </div>
             </div>
         </div>
     </div>
 
-<script>
-/* Your existing JS remains unchanged */
+    <script>
+        // Tab functionality
 function openTab(event, tabName) {
+    // Hide all tab contents
     const tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(content => content.classList.remove('active'));
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    // Remove active class from all buttons
     const tabButtons = document.querySelectorAll('.tab-button');
-    tabButtons.forEach(button => button.classList.remove('active'));
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+    
+    // Show selected tab and mark button as active
     document.getElementById(tabName).classList.add('active');
     event.currentTarget.classList.add('active');
 }
 
+
 function changeImage(clickedImg) {
+    // Main image element को find करें
     const mainImage = document.getElementById('mainImage');
+    
+    // Clicked thumbnail की src को main image में set करें
     mainImage.src = clickedImg.src;
+    
+    // Alt text भी update करें
     mainImage.alt = clickedImg.alt;
 }
+
 
 function increaseQty() {
     const quantityInput = document.getElementById('quantity');
     let currentValue = parseInt(quantityInput.value);
     const maxValue = parseInt(quantityInput.max) || 10;
-    if (currentValue < maxValue) quantityInput.value = currentValue + 1;
+    
+    if (currentValue < maxValue) {
+        quantityInput.value = currentValue + 1;
+    }
 }
 
 function decreaseQty() {
     const quantityInput = document.getElementById('quantity');
     let currentValue = parseInt(quantityInput.value);
     const minValue = parseInt(quantityInput.min) || 1;
-    if (currentValue > minValue) quantityInput.value = currentValue - 1;
+    
+    if (currentValue > minValue) {
+        quantityInput.value = currentValue - 1;
+    }
 }
 
+// Cart management with localStorage
 class ShoppingCart {
     constructor() {
         this.cart = this.loadCart();
         this.updateCartCount();
     }
+    
     addToCart(product) {
         const quantity = parseInt(document.getElementById('quantity').value) || 1;
         const existingItem = this.cart.find(item => item.id === product.id);
-        if (existingItem) existingItem.quantity += quantity;
-        else this.cart.push({ ...product, quantity });
+        
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            this.cart.push({
+                ...product,
+                quantity: quantity
+            });
+        }
+        
         this.saveCart();
         this.updateCartCount();
         this.showNotification('Product added to cart!');
     }
+    
     saveCart() {
         localStorage.setItem('shopping-cart', JSON.stringify(this.cart));
     }
+    
     loadCart() {
         const savedCart = localStorage.getItem('shopping-cart');
         return savedCart ? JSON.parse(savedCart) : [];
     }
+    
     updateCartCount() {
         const count = this.cart.reduce((total, item) => total + item.quantity, 0);
         const cartCountElement = document.querySelector('.cart-count');
-        if (cartCountElement) cartCountElement.textContent = count;
+        if (cartCountElement) {
+            cartCountElement.textContent = count;
+        }
     }
+    
     showNotification(message) {
+        // Simple notification
         const notification = document.createElement('div');
         notification.className = 'cart-notification';
         notification.textContent = message;
@@ -317,21 +416,27 @@ class ShoppingCart {
             border-radius: 5px;
             z-index: 1000;
         `;
+        
         document.body.appendChild(notification);
-        setTimeout(() => notification.remove(), 3000);
+        
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
     }
 }
+
+// Initialize cart
 const shoppingCart = new ShoppingCart();
-
-
-
-
 
 function goToLogin() {
     // Redirect user to your login page
-    window.location.href = 'loginnn.html';  // <-- yaha tumhare login page ka path
+    window.location.href = '../pages/loginnn.html';  // <-- yaha tumhare login page ka path
 }
 
-</script>
+
+
+
+
+    </script>
 </body>
 </html>
