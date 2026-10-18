@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyMart</title>
+    <link rel="stylesheet" href="../css/holder2.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><a class="logo-name" href="../index.html" >Tech Hub </a></h2><p style="font-family:Verdana" >India</p></a></h2>
+            </div>
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> > 
+                <a href="../index.html#products">Products</a> > 
+                <span>Gaming Headphones</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Container -->
+    <div class="product-detail-container">
+        
+        <!-- Product Images Section -->
+        <div class="product-images">
+            <div class="main-image">
+                <img src="../Imagess/Product_Images/bluetooth-speaker/specker2.png" alt="Smart Watch" id="mainImage">
+            </div>
+            <div class="thumbnail-images">
+                <img src="../Imagess/Product_Images/bluetooth-speaker/2stviewspecker.png" alt="Earbuds with Case" class="thumbnail active" onclick="changeImage(this)">
+                <img src="../Imagess/Product_Images/bluetooth-speaker/specker2.png" alt="Single Earbud" class="thumbnail" onclick="changeImage(this)">
+                <img src="../Imagess/Product_Images/bluetooth-speaker/3stviewspecker.png" alt="Charging Case" class="thumbnail" onclick="changeImage(this)">
+                <img src="../Imagess/Product_Images/bluetooth-speaker/4stviewspecker.png" alt="In Use" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <!-- Product Info Section -->
+        <div class="product-info">
+            <div class="product-header">
+                <h1 class="product-name">Gaming Headphones</h1>
+                <div class="product-rating">
+                    <div class="stars">★★★★☆</div>
+                    <span class="rating-count">4.5 (456 reviews)</span>
+<br>
+                </div>
+<p class="abhi">Premium sound quality, long battery life,and stylish design - perfect for music,gaming.</p>
+
+            </div>
+
+            <div class="price-section">
+                <span class="current-price">₹1,100</span>
+                <span class="old-price">₹1,999</span>
+                <span class="discount-percent">45% OFF</span>
+            </div>
+
+            <div class="product-features">
+                <h3>Key Features of product:</h3>
+                <ul>
+                    <li>✓ 💻 Multi-Platform Compatibility – Works with PC, PS5, Xbox, Mobile, and Laptops
+</li>
+                    <li>✓🎤 Detachable Noise-Cancelling Mic – Clear team communication with background noise
+
+ </li>
+                    <li>✓🔋 Long Battery Life – Up to 20 hours of continuous playtime
+
+ </li>
+                    <li>✓🎚 On-Ear Controls – Adjust volume, mic, and lighting on the go
+ </li>
+                    <li>✓⚡ RGB Lighting Effects – Customizable glow for your gaming setup
+
+ </li>
+                </ul>
+            </div>
+
+            <div class="quantity-section">
+                <label>Quantity:</label>
+                <div class="quantity-controls">
+                    <button onclick="decreaseQty()">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button onclick="increaseQty()">+</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-cart-btn">Add to Cart</button>
+                 <button onclick="goToLogin()">Buy Now</button>                
+                
+            </div>
+
+            <div class="delivery-info">
+                <div class="delivery-item">
+                    <strong>🚚 Free Delivery:</strong> Order above ₹500 rupees
+                </div>
+                <div class="delivery-item">
+                    <strong>📦 Expected Delivery:</strong> 4-5 working days
+                </div>
+                <div class="delivery-item">
+                    <strong>↩ Return Policy:</strong> 7 days easy return
+                </div>
+                  <div class="delivery-item">
+                    <strong>💰refund policy:</strong> money deposited in bank account
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Description Tabs -->
+    <div class="description-container"> 
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'description')">Description</button>
+            <button class="tab-button" onclick="openTab(event, 'specifications')">Specifications</button>
+            <button class="tab-button" onclick="openTab(event, 'reviews')">Reviews</button>
+        </div>
+
+        <!-- Description Tab -->
+        <div id="description" class="tab-content active">
+            <h3>Product Description</h3>
+            <p>Experience your <strong>Gaming Headphones </strong>, built for gamers who demand power, precision, and comfort. Equipped with 50 mm neodymium drivers and 7.1 surround sound, these headphones deliver crystal-clear audio and deep bass, letting you hear every move and detail in your game. With Bluetooth 5.3 and wired 3.5 mm connectivity, you get the freedom to play your way—wireless or plugged in.
+                            </p>
+            
+            
+            <h4>Perfect for:</h4>
+            <ul>
+                <li>🎮 PC, Console & Mobile Gaming</li>
+                <li>🎧 Music & Movie Streaming </li>
+                <li>📞 Voice Chats & Online Meetings</li>
+                <li>✈ Travel & Daily Entertainment</li>
+                <li>🏠 Long Gaming Sessionss</li>
+            </ul>
+
+            <h4>Design & Technology:</h4>
+            <p>
+                Designed with a durable matte finish and ergonomic memory foam cushions, the Realme SonicWave X Pro offers long-lasting comfort for extended gaming hours. The detachable noise-cancelling mic ensures clear team communication, while RGB lighting adds flair to your setup. Enjoy low-latency performance, 20-hour battery life, and precise sound positioning for the ultimate immersive gaming experience—both indoors and outdoors.    </p>
+        </div>
+
+        <!-- Specifications Tab -->
+        <div id="specifications" class="tab-content">
+            <h3>Technical Specifications</h3>
+            <table class="specs-table">
+                <tr>
+                    <td><strong>Bluetooth Version</strong></td>
+                    <td>Bluetooth 5.3</td>
+                </tr>
+                <tr>
+                    <td><strong>range</strong></td>
+                    <td>upto 12 meters</td>
+                </tr>
+                <tr>
+                    <td><strong>Charging Time</strong></td>
+                    <td>2 hours (USB-C Fast Charging)</td>
+                </tr>
+                <tr>
+                    <td><strong>Lighting</strong></td>
+                    <td>RGB Customizable Effects</td>
+                </tr>
+                <tr>
+                    <td><strong>Battery Life</strong></td>
+                    <td>Up to 20 hours (RGB off)</td>
+                </tr>
+                <tr>
+                    <td><strong>Dimensions</strong></td>
+                    <td>195×180×85 mm (approx.)</td>
+                </tr>
+                <tr>
+                    <td><strong>Compatibility</strong></td>
+                    <td>PC, PS5, Xbox, Mobile, Tablet, and Laptop</td>
+                </tr>
+                <tr>
+                    <td><strong>Weight</strong></td>
+                    <td>320g</td>
+                </tr>
+                <tr>
+                    <td><strong>Warranty</strong></td>
+                    <td>5 Year Manufacturer Warranty</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Reviews Tab -->
+        <div id="reviews" class="tab-content">
+            <h3>Customer Reviews (127)</h3>
+            
+            <div class="review-summary">
+                <div class="overall-rating">
+                    <span class="big-rating">4.5</span>
+                    <div class="stars-large">★★★★☆</div>
+                    <p>Based on 456 reviews</p>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span>5★</span>
+                        <div class="bar"><div class="fill" style="width: 60%"></div></div>
+                        <span>76</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4★</span>
+                        <div class="bar"><div class="fill" style="width: 25%"></div></div>
+                        <span>32</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3★</span>
+                        <div class="bar"><div class="fill" style="width: 10%"></div></div>
+                        <span>13</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2★</span>
+                        <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                        <span>4</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1★</span>
+                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="individual-reviews">
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Priya K.</strong>
+                        <div class="stars">★★★★★</div>
+                        <span class="review-date">3 days ago</span>
+                    </div>
+                    <p>"The sound quality blew me away. Footsteps, gunshots, everything feels so real with 7.1 surround sound. The mic is super clear, and teammates say my voice sounds crisp. Battery easily lasts through long sessions. Worth every rupee."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Arjun D.</strong>
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-date">1 week ago</span>
+                    </div>
+                    <p>"Super comfortable for long hours. I play for 3–4 hours straight and no ear pain at all. RGB lights look great but drain the battery faster. Still, the sound and build quality are excellent for this price."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Nisha T.</strong>
+                        <div class="stars">★★★☆☆</div>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                    <p>"Decent overall. Audio clarity is fine, but the Bluetooth range drops slightly if I move to another room. Works best in wired mode. The design is stylish though, and mic performance is solid."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <strong>Sonal P.</strong>
+                        <div class="stars">★★☆☆☆</div>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                    <p>"Sound is good but mine had a slight buzzing sound on Bluetooth mode. Works fine when wired. Customer support helped with replacement though, so points for service."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Tab functionality
+function openTab(event, tabName) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    // Remove active class from all buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+    
+    // Show selected tab and mark button as active
+    document.getElementById(tabName).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
+
+
+function changeImage(clickedImg) {
+    // Main image element को find करें
+    const mainImage = document.getElementById('mainImage');
+    
+    // Clicked thumbnail की src को main image में set करें
+    mainImage.src = clickedImg.src;
+    
+    // Alt text भी update करें
+    mainImage.alt = clickedImg.alt;
+}
+
+
+function increaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const maxValue = parseInt(quantityInput.max) || 10;
+    
+    if (currentValue < maxValue) {
+        quantityInput.value = currentValue + 1;
+    }
+}
+
+function decreaseQty() {
+    const quantityInput = document.getElementById('quantity');
+    let currentValue = parseInt(quantityInput.value);
+    const minValue = parseInt(quantityInput.min) || 1;
+    
+    if (currentValue > minValue) {
+        quantityInput.value = currentValue - 1;
+    }
+}
+
+// Cart management with localStorage
+class ShoppingCart {
+    constructor() {
+        this.cart = this.loadCart();
+        this.updateCartCount();
+    }
+    
+    addToCart(product) {
+        const quantity = parseInt(document.getElementById('quantity').value) || 1;
+        const existingItem = this.cart.find(item => item.id === product.id);
+        
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            this.cart.push({
+                ...product,
+                quantity: quantity
+            });
+        }
+        
+        this.saveCart();
+        this.updateCartCount();
+        this.showNotification('Product added to cart!');
+    }
+    
+    saveCart() {
+        localStorage.setItem('shopping-cart', JSON.stringify(this.cart));
+    }
+    
+    loadCart() {
+        const savedCart = localStorage.getItem('shopping-cart');
+        return savedCart ? JSON.parse(savedCart) : [];
+    }
+    
+    updateCartCount() {
+        const count = this.cart.reduce((total, item) => total + item.quantity, 0);
+        const cartCountElement = document.querySelector('.cart-count');
+        if (cartCountElement) {
+            cartCountElement.textContent = count;
+        }
+    }
+    
+    showNotification(message) {
+        // Simple notification
+        const notification = document.createElement('div');
+        notification.className = 'cart-notification';
+        notification.textContent = message;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        `;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
+    }
+}
+
+// Initialize cart
+const shoppingCart = new ShoppingCart();
+
+
+
+function goToLogin() {
+    // Redirect user to your login page
+    window.location.href = 'loginnn.html';  // <-- yaha tumhare login page ka path
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

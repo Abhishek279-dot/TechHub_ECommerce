@@ -90,13 +90,20 @@ Products are organized into different categories:
 TechHub/
 │
 ├── index.html
-├── style.css
-├── script.js
+├── pages/
+│   └── <page>.html
+├── css/
+│   ├── style.css
+│   └── holder2.css
+├── js/
+│   └── script.js
 │
-├── images/
-│   ├── products/
-│   ├── categories/
-│   └── banners/
+├── Imagess/
+│   ├── Product_Images/
+│   │   └── <product-name>/
+│   ├── Categories/
+│   ├── Banners/
+│   └── Branding/
 │
 └── README.md
 ```
