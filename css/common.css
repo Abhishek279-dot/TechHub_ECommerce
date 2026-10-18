@@ -1,0 +1,44 @@
+/* Styles shared by the home page and the product pages */
+
+/* ---------- Toast notification (js/cart.js) ---------- */
+.cart-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  animation: slideInRight 0.4s ease;
+}
+
+.cart-notification.success { background: #4caf50; }
+.cart-notification.error { background: #f44336; }
+
+.cart-notification.hide {
+  animation: slideOutRight 0.4s ease forwards;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutRight {
+  from { transform: translateX(0); opacity: 1; }
+  to   { transform: translateX(100%); opacity: 0; }
+}
+
+/* ---------- "Added!" state of the Add to Cart buttons ---------- */
+.add-to-cart.added,
+.add-to-cart-btn.added {
+  background: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}

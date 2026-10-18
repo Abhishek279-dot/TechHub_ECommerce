@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI power adaptor (33W) - SkyMart</title>
-    <link rel="stylesheet" href="../css/holder2.css">
+    <title>MI power adaptor (33W) - TechHub India</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h2><a href="../index.html">SkyMart</a></h2>
+                <h2><a href="../index.html">TechHub India</a></h2>
             </div>
             <div class="breadcrumb">
-                <a href="../index.html">Home</a> > 
-                <a href="../index.html#products">Products</a> > 
+                <a href="../index.html">Home</a> >
+                <a href="../index.html#products">Products</a> >
                 <span>MI power adaptor (33W)</span>
             </div>
         </div>
@@ -23,17 +24,17 @@
 
     <!-- Product Detail Container -->
     <div class="product-detail-container">
-        
+
         <!-- Product Images Section -->
         <div class="product-images">
             <div class="main-image">
-                <img src="../Imagess/Product_Images/xiaomi-charger/mipower2.png" alt="Wireless Bluetooth Earbuds" id="mainImage">
+                <img src="../images/products/xiaomi-charger/mipower2.png" alt="MI power adaptor (33W)" id="mainImage">
             </div>
             <div class="thumbnail-images">
-                <img src="../Imagess/Product_Images/xiaomi-charger/mipower2.png" alt="Earbuds with Case" class="thumbnail active" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/xiaomi-charger/mipower1.png" alt="Single Earbud" class="thumbnail" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/xiaomi-charger/mipower3.png" alt="Charging Case" class="thumbnail" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/xiaomi-charger/mipower4.png" alt="In Use" class="thumbnail" onclick="changeImage(this)">
+                <img src="../images/products/xiaomi-charger/mipower2.png" alt="MI power adaptor (33W) - view 1" class="thumbnail active">
+                <img src="../images/products/xiaomi-charger/mipower1.png" alt="MI power adaptor (33W) - view 2" class="thumbnail">
+                <img src="../images/products/xiaomi-charger/mipower3.png" alt="MI power adaptor (33W) - view 3" class="thumbnail">
+                <img src="../images/products/xiaomi-charger/mipower4.png" alt="MI power adaptor (33W) - view 4" class="thumbnail">
             </div>
         </div>
 
@@ -46,8 +47,7 @@
                     <span class="rating-count">4.3 (4111 reviews)</span>
 <br>
                 </div>
-<p class="abhi">Fast, safe, and reliable – charge your devices at blazing speed with Mi’s 33W power adapter.
-</p>
+<p class="product-tagline">Fast, safe, and reliable – charge your devices at blazing speed with Mi’s 33W power adapter.</p>
 
             </div>
 
@@ -60,35 +60,27 @@
             <div class="product-features">
                 <h3>Key Features of product:</h3>
                 <ul>
-                    <li>✓ ⚡ 33W SonicCharge 2.0 Fast Charging – ultra-fast power delivery
-
-</li>
-                    <li>✓ 🔌 Universal Compatibility – supports Mi, Redmi, Samsung, OnePlus & more
-
- </li>
-                    <li>✓ 🔋 Smart Power Distribution – auto-adjusts output for device safety
-
- </li>
-                    <li>✓ 🧳 Compact & Travel-Friendly Design – lightweight and durable build
-</li>
-                    <li>✓ 🔥 Heat-Resistant Material – ensures stable long-term use
-</li>
+                    <li>✓ ⚡ 33W SonicCharge 2.0 Fast Charging – ultra-fast power delivery</li>
+                    <li>✓ 🔌 Universal Compatibility – supports Mi, Redmi, Samsung, OnePlus & more</li>
+                    <li>✓ 🔋 Smart Power Distribution – auto-adjusts output for device safety</li>
+                    <li>✓ 🧳 Compact & Travel-Friendly Design – lightweight and durable build</li>
+                    <li>✓ 🔥 Heat-Resistant Material – ensures stable long-term use</li>
                 </ul>
             </div>
 
             <div class="quantity-section">
                 <label>Quantity:</label>
                 <div class="quantity-controls">
-                    <button onclick="decreaseQty()">-</button>
+                    <button data-qty="-1">-</button>
                     <input type="number" id="quantity" value="1" min="1" max="10">
-                    <button onclick="increaseQty()">+</button>
+                    <button data-qty="1">+</button>
                 </div>
             </div>
 
             <div class="action-buttons">
                 <button class="add-to-cart-btn">Add to Cart</button>
-                 <button onclick="goToLogin()">Buy Now</button>                
-                
+                 <button class="buy-now-btn">Buy Now</button>
+
             </div>
 
             <div class="delivery-info">
@@ -110,39 +102,29 @@
     </div>
 
     <!-- Product Description Tabs -->
-    <div class="description-container"> 
+    <div class="description-container">
         <div class="tabs">
-            <button class="tab-button active" onclick="openTab(event, 'description')">Description</button>
-            <button class="tab-button" onclick="openTab(event, 'specifications')">Specifications</button>
-            <button class="tab-button" onclick="openTab(event, 'reviews')">Reviews</button>
+            <button class="tab-button active" data-tab="description">Description</button>
+            <button class="tab-button" data-tab="specifications">Specifications</button>
+            <button class="tab-button" data-tab="reviews">Reviews</button>
         </div>
 
         <!-- Description Tab -->
         <div id="description" class="tab-content active">
             <h3>Product Description</h3>
-            <p>Power up your smartphone and gadgets efficiently with the Mi 33W SonicCharge 2.0 Power Adapter. Designed with advanced fast-charging technology, it delivers optimal power output for Mi, Redmi, and other compatible devices. The compact and durable build makes it perfect for travel, while multiple safety layers ensure worry-free charging every time. Whether it’s your phone, tablet, or power bank, this adapter guarantees quick and secure performance.
+            <p>Power up your smartphone and gadgets efficiently with the Mi 33W SonicCharge 2.0 Power Adapter. Designed with advanced fast-charging technology, it delivers optimal power output for Mi, Redmi, and other compatible devices. The compact and durable build makes it perfect for travel, while multiple safety layers ensure worry-free charging every time. Whether it’s your phone, tablet, or power bank, this adapter guarantees quick and secure performance.</p>
 
-                            </p>
-            
-            
             <h4>Perfect for:</h4>
             <ul>
-                <li>📱 Smartphones & Tablets (Mi, Redmi, Poco, Samsung, OnePlus, etc.)
-</li>
-                <li> 💻 Charging USB-C Laptops & Accessories
-</li>
-                <li> 🔋 Power Banks & Wireless Earbuds
-</li>
-                <li>🏠 Home Charging Setup
-</li>
-                
+                <li>📱 Smartphones & Tablets (Mi, Redmi, Poco, Samsung, OnePlus, etc.)</li>
+                <li>💻 Charging USB-C Laptops & Accessories</li>
+                <li>🔋 Power Banks & Wireless Earbuds</li>
+                <li>🏠 Home Charging Setup</li>
+
                           </ul>
 
             <h4>Design & Technology:</h4>
-            <p>
-               The Mi 33W Power Adapter features a compact, heat-resistant design built for long-lasting performance. Equipped with Smart Voltage Regulation and Quick Charge 3.0 / Power Delivery (PD) support, it automatically adjusts output for each device. The high-grade chipset provides efficient charging while preventing overheating, short-circuits, and over-voltage issues. Lightweight and stylish, it’s the perfect mix of speed and safety.
-
- </p>
+            <p>The Mi 33W Power Adapter features a compact, heat-resistant design built for long-lasting performance. Equipped with Smart Voltage Regulation and Quick Charge 3.0 / Power Delivery (PD) support, it automatically adjusts output for each device. The high-grade chipset provides efficient charging while preventing overheating, short-circuits, and over-voltage issues. Lightweight and stylish, it’s the perfect mix of speed and safety.</p>
         </div>
 
         <!-- Specifications Tab -->
@@ -151,28 +133,23 @@
             <table class="specs-table">
                 <tr>
                     <td><strong>power output</strong></td>
-                    <td>33W Max
-</td>
+                    <td>33W Max</td>
                 </tr>
                 <tr>
                     <td><strong>input</strong></td>
-                    <td>100–240V ~ 50/60Hz
-</td>
+                    <td>100–240V ~ 50/60Hz</td>
                 </tr>
                 <tr>
                     <td><strong>outputs</strong></td>
-                    <td>5V/3A, 9V/3A, 12V/2.5A, 20V/1.35A
-</td>
+                    <td>5V/3A, 9V/3A, 12V/2.5A, 20V/1.35A</td>
                 </tr>
                 <tr>
                     <td><strong>ports</strong></td>
-                    <td>USB-A / Type-C (based on variant)
-</td>
+                    <td>USB-A / Type-C (based on variant)</td>
                 </tr>
                 <tr>
                     <td><strong>technology</strong></td>
-                    <td>Qualcomm QC 3.0 & Power Delivery (PD)
-</td>
+                    <td>Qualcomm QC 3.0 & Power Delivery (PD)</td>
                 </tr>
                 <tr>
                     <td><strong>IP rating</strong></td>
@@ -180,8 +157,7 @@
                 </tr>
                 <tr>
                     <td><strong>copatibility</strong></td>
-                    <td> All smartphones, tablets, and Type-C devices
-</td>
+                    <td>All smartphones, tablets, and Type-C devices</td>
                 </tr>
                                 <tr>
                     <td><strong>Weight</strong></td>
@@ -197,7 +173,7 @@
         <!-- Reviews Tab -->
         <div id="reviews" class="tab-content">
             <h3>Customer Reviews (127)</h3>
-            
+
             <div class="review-summary">
                 <div class="overall-rating">
                     <span class="big-rating">4.3</span>
@@ -272,137 +248,7 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Tab functionality
-function openTab(event, tabName) {
-    // Hide all tab contents
-    const tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(content => {
-        content.classList.remove('active');
-    });
-    
-    // Remove active class from all buttons
-    const tabButtons = document.querySelectorAll('.tab-button');
-    tabButtons.forEach(button => {
-        button.classList.remove('active');
-    });
-    
-    // Show selected tab and mark button as active
-    document.getElementById(tabName).classList.add('active');
-    event.currentTarget.classList.add('active');
-}
-
-
-function changeImage(clickedImg) {
-    // Main image element को find करें
-    const mainImage = document.getElementById('mainImage');
-    
-    // Clicked thumbnail की src को main image में set करें
-    mainImage.src = clickedImg.src;
-    
-    // Alt text भी update करें
-    mainImage.alt = clickedImg.alt;
-}
-
-
-function increaseQty() {
-    const quantityInput = document.getElementById('quantity');
-    let currentValue = parseInt(quantityInput.value);
-    const maxValue = parseInt(quantityInput.max) || 10;
-    
-    if (currentValue < maxValue) {
-        quantityInput.value = currentValue + 1;
-    }
-}
-
-function decreaseQty() {
-    const quantityInput = document.getElementById('quantity');
-    let currentValue = parseInt(quantityInput.value);
-    const minValue = parseInt(quantityInput.min) || 1;
-    
-    if (currentValue > minValue) {
-        quantityInput.value = currentValue - 1;
-    }
-}
-
-// Cart management with localStorage
-class ShoppingCart {
-    constructor() {
-        this.cart = this.loadCart();
-        this.updateCartCount();
-    }
-    
-    addToCart(product) {
-        const quantity = parseInt(document.getElementById('quantity').value) || 1;
-        const existingItem = this.cart.find(item => item.id === product.id);
-        
-        if (existingItem) {
-            existingItem.quantity += quantity;
-        } else {
-            this.cart.push({
-                ...product,
-                quantity: quantity
-            });
-        }
-        
-        this.saveCart();
-        this.updateCartCount();
-        this.showNotification('Product added to cart!');
-    }
-    
-    saveCart() {
-        localStorage.setItem('shopping-cart', JSON.stringify(this.cart));
-    }
-    
-    loadCart() {
-        const savedCart = localStorage.getItem('shopping-cart');
-        return savedCart ? JSON.parse(savedCart) : [];
-    }
-    
-    updateCartCount() {
-        const count = this.cart.reduce((total, item) => total + item.quantity, 0);
-        const cartCountElement = document.querySelector('.cart-count');
-        if (cartCountElement) {
-            cartCountElement.textContent = count;
-        }
-    }
-    
-    showNotification(message) {
-        // Simple notification
-        const notification = document.createElement('div');
-        notification.className = 'cart-notification';
-        notification.textContent = message;
-        notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #28a745;
-            color: white;
-            padding: 15px;
-            border-radius: 5px;
-            z-index: 1000;
-        `;
-        
-        document.body.appendChild(notification);
-        
-        setTimeout(() => {
-            notification.remove();
-        }, 3000);
-    }
-}
-
-// Initialize cart
-const shoppingCart = new ShoppingCart();
-
-function goToLogin() {
-    // Redirect user to your login page
-    window.location.href = '../pages/loginnn.html';  // <-- yaha tumhare login page ka path
-}
-
-
-
-
-    </script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/product.js"></script>
 </body>
 </html>

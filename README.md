@@ -87,28 +87,43 @@ Products are organized into different categories:
 ## 📁 Project Structure
 
 ```text
-TechHub/
+TechHub_ECommerce/
 │
-├── index.html
-├── pages/
-│   └── <page>.html
+├── index.html                  # Home page
+│
+├── pages/                      # Site pages
+│   ├── about.html
+│   ├── contact.html
+│   └── login.html
+│
+├── products/                   # One page per product (file name = product id)
+│   ├── bluetooth-speaker.html
+│   ├── type-c-cable.html
+│   └── ...                     # 17 product pages
+│
 ├── css/
-│   ├── style.css
-│   └── holder2.css
-├── js/
-│   └── script.js
+│   ├── common.css              # Shared (cart notification toast)
+│   ├── style.css               # Home page
+│   ├── product.css             # All product pages
+│   └── about.css / contact.css / login.css
 │
-├── Imagess/
-│   ├── Product_Images/
-│   │   └── <product-name>/
-│   ├── Categories/
-│   ├── Banners/
-│   └── Branding/
+├── js/
+│   ├── cart.js                 # Shared cart logic (localStorage)
+│   ├── script.js               # Home page: sliders, cart sidebar, search
+│   ├── product.js              # Product pages: gallery, tabs, add to cart
+│   └── login.js
+│
+├── images/
+│   ├── banners/
+│   ├── branding/
+│   ├── categories/
+│   └── products/
+│       └── <product-id>/       # Same name as the page in products/
 │
 └── README.md
 ```
 
-> File and folder names may vary depending on the final project structure.
+To run it, open the folder in VS Code and use the **Live Server** extension on `index.html`.
 
 ---
 

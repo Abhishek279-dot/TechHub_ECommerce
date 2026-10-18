@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - E-commerce Store</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <span>🛒</span>
+                <span>Tech-Hub</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#products">Shop</a>
+                <a href="../index.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="login-container">
+            <!-- Login Form -->
+            <div class="login-form" id="loginForm">
+                <div class="header">
+                    <h1>Welcome Back!</h1>
+                    <p>Login to complete your purchase</p>
+                </div>
+
+                <form id="loginFormElement">
+                    <div class="input-group">
+                        <input type="text" id="username" placeholder=" " required>
+                        <label for="username">Email or Username</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder=" " required>
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="error-message" id="errorMessage">
+                        Please fill in all fields
+                    </div>
+
+                    <button type="submit" class="btn" id="loginBtn">
+                        Login & Continue
+                    </button>
+                </form>
+
+            </div>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h2>Login Successful!</h2>
+                <p>You have been successfully logged in.</p>
+
+                <div class="order-details">
+                    <p><strong>Order ID:</strong> <span id="orderId"></span></p>
+                    <p><strong>Email:</strong> <span id="orderEmail"></span></p>
+                    <p><strong>Status:</strong> Processing</p>
+                </div>
+
+                <button class="btn" onclick="redirectToHome()">
+                    Continue Shopping
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

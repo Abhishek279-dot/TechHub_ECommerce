@@ -1,0 +1,6 @@
+# Stops Windows/Linux line-ending differences from showing up as changes
+* text=auto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary

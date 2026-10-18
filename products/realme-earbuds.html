@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyMart</title>
-    <link rel="stylesheet" href="../css/holder2.css">
+    <title>Realme Earbuds - TechHub India</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -14,26 +15,26 @@
                 <h2><a class="logo-name" href="../index.html" >Tech Hub </a></h2><p style="font-family:Verdana" >India</p></a></h2>
             </div>
             <div class="breadcrumb">
-                <a href="../index.html">Home</a> > 
-                <a href="../index.html#products">Products</a> > 
+                <a href="../index.html">Home</a> >
+                <a href="../index.html#products">Products</a> >
                 <span>Realme Earbuds</span>
             </div>
         </div>
     </nav>
 
-    <!-- Product Detail Container -->   
+    <!-- Product Detail Container -->
     <div class="product-detail-container">
-        
+
         <!-- Product Images Section -->
         <div class="product-images">
             <div class="main-image">
-                <img src="../Imagess/Product_Images/realme-earbuds/realmeear2.png" alt="Wireless Bluetooth Earbuds" id="mainImage">
+                <img src="../images/products/realme-earbuds/realmeear2.png" alt="Realme Earbuds" id="mainImage">
             </div>
             <div class="thumbnail-images">
-                <img src="../Imagess/Product_Images/realme-earbuds/realmeear1.png" alt="Earbuds with Case" class="thumbnail active" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/realme-earbuds/realmeear3.png" alt="Single Earbud" class="thumbnail" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/realme-earbuds/realmeear4.png" alt="Charging Case" class="thumbnail" onclick="changeImage(this)">
-                <img src="../Imagess/Product_Images/realme-earbuds/realmeear2.png" alt="In Use" class="thumbnail" onclick="changeImage(this)">
+                <img src="../images/products/realme-earbuds/realmeear1.png" alt="Realme Earbuds - view 1" class="thumbnail active">
+                <img src="../images/products/realme-earbuds/realmeear3.png" alt="Realme Earbuds - view 2" class="thumbnail">
+                <img src="../images/products/realme-earbuds/realmeear4.png" alt="Realme Earbuds - view 3" class="thumbnail">
+                <img src="../images/products/realme-earbuds/realmeear2.png" alt="Realme Earbuds - view 4" class="thumbnail">
             </div>
         </div>
 
@@ -46,7 +47,7 @@
                     <span class="rating-count">4.1 (578 reviews)</span>
 <br>
                 </div>
-<p class="abhi">Premium sound quality, long battery life,and stylish design - perfect for music,gaming.</p>
+<p class="product-tagline">Premium sound quality, long battery life,and stylish design - perfect for music,gaming.</p>
 
             </div>
 
@@ -59,37 +60,27 @@
             <div class="product-features">
                 <h3>Key Features of product:</h3>
                 <ul>
-                    <li>✓ 🔊 12.4 mm Titanium Drivers – Deep bass and crystal-clear sound
-</li>
-                    <li>🎧 Bluetooth Version 5.4 – Stable connection with ultra-low 40 ms latency (Game Mode)
-
-
- </li>
-                    <li>✓🔋 Long Battery Life – 10 hrs (earbuds) + 42 hrs (with case)
-
-
- </li>
-                    <li>✓💧 IPX5 Water Resistant – Sweat & splash protection
- </li>
-                    <li>✓🎙 Quad-Mic AI ENC – Clear voice calls even in noisy areas
-
- </li>
+                    <li>✓ 🔊 12.4 mm Titanium Drivers – Deep bass and crystal-clear sound</li>
+                    <li>🎧 Bluetooth Version 5.4 – Stable connection with ultra-low 40 ms latency (Game Mode)</li>
+                    <li>✓🔋 Long Battery Life – 10 hrs (earbuds) + 42 hrs (with case)</li>
+                    <li>✓💧 IPX5 Water Resistant – Sweat & splash protection</li>
+                    <li>✓🎙 Quad-Mic AI ENC – Clear voice calls even in noisy areas</li>
                 </ul>
             </div>
 
             <div class="quantity-section">
                 <label>Quantity:</label>
                 <div class="quantity-controls">
-                    <button onclick="decreaseQty()">-</button>
+                    <button data-qty="-1">-</button>
                     <input type="number" id="quantity" value="1" min="1" max="10">
-                    <button onclick="increaseQty()">+</button>
+                    <button data-qty="1">+</button>
                 </div>
             </div>
 
             <div class="action-buttons">
                 <button class="add-to-cart-btn">Add to Cart</button>
-                 <button onclick="goToLogin()">Buy Now</button>                
-                
+                 <button class="buy-now-btn">Buy Now</button>
+
             </div>
 
             <div class="delivery-info">
@@ -111,24 +102,22 @@
     </div>
 
     <!-- Product Description Tabs -->
-    <div class="description-container"> 
+    <div class="description-container">
         <div class="tabs">
-            <button class="tab-button active" onclick="openTab(event, 'description')">Description</button>
-            <button class="tab-button" onclick="openTab(event, 'specifications')">Specifications</button>
-            <button class="tab-button" onclick="openTab(event, 'reviews')">Reviews</button>
+            <button class="tab-button active" data-tab="description">Description</button>
+            <button class="tab-button" data-tab="specifications">Specifications</button>
+            <button class="tab-button" data-tab="reviews">Reviews</button>
         </div>
 
         <!-- Description Tab -->
         <div id="description" class="tab-content active">
             <h3>Product Description</h3>
-            <p>Experience your <strong> Realme Earbuds </strong> music like never before with our Portable Realme Earbuds. Built with advanced drivers and enhanced bass technology, this speaker delivers crystal-clear sound and deep bass that fills any space. The compact and lightweight design makes it easy to carry, while the durable body ensures it can handle everyday adventures. With Bluetooth 5.0 connectivity, enjoy seamless pairing and uninterrupted music wherever you go.
-                            </p>
-            
-            
+            <p>Experience your <strong> Realme Earbuds </strong> music like never before with our Portable Realme Earbuds. Built with advanced drivers and enhanced bass technology, this speaker delivers crystal-clear sound and deep bass that fills any space. The compact and lightweight design makes it easy to carry, while the durable body ensures it can handle everyday adventures. With Bluetooth 5.0 connectivity, enjoy seamless pairing and uninterrupted music wherever you go.</p>
+
             <h4>Perfect for:</h4>
             <ul>
                 <li>🎵 Music Streaming & Audio Entertainment</li>
-                <li>📞 Hands-free Calls </li>
+                <li>📞 Hands-free Calls</li>
                 <li>🏃‍♂ Workout & Sports Activities</li>
                 <li>✈ Travel & picnic sites</li>
                 <li>🎮 Mobile Gaming with Low Latency</li>
@@ -136,8 +125,7 @@
             </ul>
 
             <h4>Design & Technology:</h4>
-            <p>
-                This Realme Earbuds is designed with a compact yet stylish body, making it easy to carry anywhere while adding a touch of elegance to your setup. Equipped with advanced Bluetooth 5.0 technology, it ensures fast pairing, stable connection, and seamless wireless audio. Its powerful drivers and smart bass technology deliver rich, immersive sound, while the durable build and long-lasting battery make it perfect for both indoor and outdoor use.            </p>
+            <p>This Realme Earbuds is designed with a compact yet stylish body, making it easy to carry anywhere while adding a touch of elegance to your setup. Equipped with advanced Bluetooth 5.0 technology, it ensures fast pairing, stable connection, and seamless wireless audio. Its powerful drivers and smart bass technology deliver rich, immersive sound, while the durable build and long-lasting battery make it perfect for both indoor and outdoor use.</p>
         </div>
 
         <!-- Specifications Tab -->
@@ -186,7 +174,7 @@
         <!-- Reviews Tab -->
         <div id="reviews" class="tab-content">
             <h3>Customer Reviews (127)</h3>
-            
+
             <div class="review-summary">
                 <div class="overall-rating">
                     <span class="big-rating">4.3</span>
@@ -261,138 +249,7 @@
             </div>
         </div>
     </div>
-    <script>
-        // Tab functionality
-function openTab(event, tabName) {
-    // Hide all tab contents
-    const tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(content => {
-        content.classList.remove('active');
-    });
-    
-    // Remove active class from all buttons
-    const tabButtons = document.querySelectorAll('.tab-button');
-    tabButtons.forEach(button => {
-        button.classList.remove('active');
-    });
-    
-    // Show selected tab and mark button as active
-    document.getElementById(tabName).classList.add('active');
-    event.currentTarget.classList.add('active');
-}
-
-
-function changeImage(clickedImg) {
-    // Main image element को find करें
-    const mainImage = document.getElementById('mainImage');
-    
-    // Clicked thumbnail की src को main image में set करें
-    mainImage.src = clickedImg.src;
-    
-    // Alt text भी update करें
-    mainImage.alt = clickedImg.alt;
-}
-
-
-function increaseQty() {
-    const quantityInput = document.getElementById('quantity');
-    let currentValue = parseInt(quantityInput.value);
-    const maxValue = parseInt(quantityInput.max) || 10;
-    
-    if (currentValue < maxValue) {
-        quantityInput.value = currentValue + 1;
-    }
-}
-
-function decreaseQty() {
-    const quantityInput = document.getElementById('quantity');
-    let currentValue = parseInt(quantityInput.value);
-    const minValue = parseInt(quantityInput.min) || 1;
-    
-    if (currentValue > minValue) {
-        quantityInput.value = currentValue - 1;
-    }
-}
-
-// Cart management with localStorage
-class ShoppingCart {
-    constructor() {
-        this.cart = this.loadCart();
-        this.updateCartCount();
-    }
-    
-    addToCart(product) {
-        const quantity = parseInt(document.getElementById('quantity').value) || 1;
-        const existingItem = this.cart.find(item => item.id === product.id);
-        
-        if (existingItem) {
-            existingItem.quantity += quantity;
-        } else {
-            this.cart.push({
-                ...product,
-                quantity: quantity
-            });
-        }
-        
-        this.saveCart();
-        this.updateCartCount();
-        this.showNotification('Product added to cart!');
-    }
-    
-    saveCart() {
-        localStorage.setItem('shopping-cart', JSON.stringify(this.cart));
-    }
-    
-    loadCart() {
-        const savedCart = localStorage.getItem('shopping-cart');
-        return savedCart ? JSON.parse(savedCart) : [];
-    }
-    
-    updateCartCount() {
-        const count = this.cart.reduce((total, item) => total + item.quantity, 0);
-        const cartCountElement = document.querySelector('.cart-count');
-        if (cartCountElement) {
-            cartCountElement.textContent = count;
-        }
-    }
-    
-    showNotification(message) {
-        // Simple notification
-        const notification = document.createElement('div');
-        notification.className = 'cart-notification';
-        notification.textContent = message;
-        notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #28a745;
-            color: white;
-            padding: 15px;
-            border-radius: 5px;
-            z-index: 1000;
-        `;
-        
-        document.body.appendChild(notification);
-        
-        setTimeout(() => {
-            notification.remove();
-        }, 3000);
-    }
-}
-
-// Initialize cart
-const shoppingCart = new ShoppingCart();
-
-
-
-function goToLogin() {
-    // Redirect user to your login page
-    window.location.href = '../pages/loginnn.html';  // <-- yaha tumhare login page ka path
-}
-
-
-
-
-    </script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/product.js"></script>
 </body>
 </html>
