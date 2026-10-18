@@ -114,6 +114,23 @@ function goToProducts() {
     document.getElementById('products').scrollIntoView();
 }
 
+// Scroll to the top and show the button after the page has been scrolled
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+window.addEventListener('scroll', function() {
+  const scrollButton = document.querySelector('.scroll-top');
+  if (window.pageYOffset > 300) {
+    scrollButton.classList.add('show');
+  } else {
+    scrollButton.classList.remove('show');
+  }
+});
+
 // ==========================================
 // 🛒 SHOPPING CART SYSTEM
 // ==========================================
